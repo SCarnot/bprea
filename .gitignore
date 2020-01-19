@@ -1,8 +1,9 @@
 *
 !README.md
 !.gitignore
-!/C3/dossier_culture/culture_ble.tex
-!/C3/dossier_culture/culture_ble.pdf
-!/Projet/REA_projet/projet1.tex
-!/Projet/REA_projet/projet1.pdf
-!/Projet/REA_projet/figures/
+
+!C3/dossier_culture/culture_ble.tex
+!C3/dossier_culture/culture_ble.pdf
+!Projet/REA_projet/projet1.tex
+!Projet/REA_projet/projet1.pdf
+!Projet/REA_projet/figures/
