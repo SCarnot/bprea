@@ -7,6 +7,10 @@
 \usepackage[top=3.5cm, bottom=3cm, left=3.0cm, right=3.0cm]{geometry}
 \usepackage{graphicx}
 \usepackage{eurosym}
+\usepackage{etoolbox} % Pour faire des citations dans le texte
+\AtBeginEnvironment{quote}{\singlespacing\small} % Pour faire des citations dans le texte
+\usepackage{setspace} % for \onehalfspacing and \singlespacing macros
+\onehalfspacing 
 \graphicspath{{figures/}{../figures}}
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 \title{Projet d'installation dans un système paysan-boulanger}
@@ -34,13 +38,6 @@ Disonnance cognotive
 Comment vivre avec cela avec mon mode de vie parisien ? Des changements certes, mais cosmétiques. Le militantisme ne suffit pas 
 
 Conséquence : je suis intimement convaincu de la nécessité d'un retour massif à la vie de camapgne et nécessairement à l'agriculture. 
-
-\begin{figure}
-\begin{center}
-	\includegraphics[scale=0.4]{3ydis3.jpg}
-	\caption{Parcelle de blé, fin novembre. Le blé a levé, mais on voit de nettes traces d'érosion et de tassement suite à un semis dans des conditions difficiles : terrain mal ressuyé et en pente.}
-\end{center}
-\end{figure}
 
 \subsection{Pourquoi être paysan-boulanger ?}
 
@@ -87,6 +84,8 @@ En terme agronomique, l'intérêt du blé (et les grandes cultures en général)
 
 \subsubsection{A la boulangerie}
 
+\section{Objectifs et finalités}
+
 \subsection{Démarche}
 
 Pas peur de lâcher de la thune à l'investissement pour être le plus efficacee et produire le plus par UTH
@@ -95,7 +94,219 @@ Pas peur de lâcher de la thune à l'investissement pour être le plus efficacee
 
 \subsection{Conditions pédo-climatiques}
 
+\chapter{Commercialisation}
+
+\section{Produits et gamme}
+
+La gamme proposée se construit sur les produits issus des céréales et de leur transformation : \textbf{le pain et la farine}. Il s'agit là de denrées de base, dont les débouchés sont certains car la demande est forte, mais à construire. Il est à noter que la crise sanitaire du COVID-19 a montré un engouement surprenant pour la farine, qui, s'il ne sera pas aussi intense après cette crise, a toute les chances d'être durable. Enfin, si le label AB augmente le prix des produits, c'est aussi un solide argument de vente auprès d'un public de plus en plus sensible aux enjeux écologiques. 
+
+\subsection{Pains}
+
+\subsubsection{Gamme principale}
+
+L'offre de pain doit se baser en grande partie sur des pains "classiques", à la farine de blé, avec une approche traditionnelle qui permet de se démarquer de la boulangerie artisanale classique. Il y a une ouverture sur les pains sans ou avec peu de gluten (farine de sarrasin et de petit épeautre) :
+
+\begin{itemize}
+
+	\item[$\triangle$] \textbf{pain de campagne} : 4\euro{}/kg, farine de blé T80 , farine de seigle
+	\item[$\triangle$] \textbf{pain complet} : 4\euro{}/kg, farine T130, son
+	\item[$\triangle$] \textbf{pain au sarrasin} : 6\euro{}/kg, farine de sarrasin (60\%), farine de blé T80
+	\item[$\triangle$] \textbf{pain de petit épeautre} : 7\euro{}/kg, farine de petit épeautre
+
+\end{itemize}
+
+Ces différents pains seront proposés dans différents formats : 500g, 1kg, moulé, façonnés. Les pains « classiques », pains complets et de campagne, forment 80 \% de la production. Les pains faibles (sarrasin) ou sans (petit épeautre) gluten constituent les 20 \% restants et s’adressent aux clients sensibles au gluten ou voulant des pains différents. 
+
+\subsubsection{Gamme secondaire}
+
+La gamme secondaire sera constituée de pains dits « spéciaux », à graines, faits à partir du pain de campagne. Les prix restent à définir, en fonction du prix des graines utilisées. 
+\begin{itemize}
+
+	\item[$\triangle$] \textbf{pain au noix}
+	\item[$\triangle$] \textbf{pain au lin}
+	\item[$\triangle$] \textbf{pain au tournesol}
+
+\end{itemize}
+      
+Il est possible d’imaginer des pains plus complexes, qui pourraientt être réalisés une fois le processus de production des produits précédents bien maitrisé et rodé. Il pourrait y avoir par exemple :
+\begin{itemize}
+
+	\item[$\triangle$] \textbf{brioche}
+	\item[$\triangle$] \textbf{pains aux olives}
+	\item[$\triangle$] \textbf{pain à l’ail}
+	\item[$\triangle$] \textbf{fougasse/bruschetta (huile d’olive ou tomate)}
+
+\end{itemize}
+Ces produits nécessitent une préparation particulière, plus de temps et des produits pas encore envisagés dans la production. Il faudrait par ailleurs savoir adapter l’organisation de la ferme pour ses produits, en boulangerie notamment. Mais il pourrait être tout à fait envisageable de garder une partie des terrains pour la production de tomates, aromatiques ou ail dédiée à cet élargissement de la gamme.
+
+\subsection{Farines}
+
+La vente de farine me permet de proposer une gamme cohérente, à base de produits céréaliers. Surtout, elle me permet de valoriser le surplus de grain issu de ma production. Je m'attends qu'avec 20ha, il soit possible de produire jusqu'à 60kg de farine par semaine, si la production de pain est limitée par le temps de travail à 300kg. Les farines sont vendues en paquet de 1kg.
+\begin{itemize}
+
+	\item[$\triangle$] \textbf{Farine de blé T80}  ; 1,5\euro{}/kg
+	\item[$\triangle$] \textbf{Farine de blé T130} ; 1,8\euro{}/kg
+	\item[$\triangle$] \textbf{Farine de seigle T130} ; 2,0\euro{}/kg
+	\item[$\triangle$] \textbf{Farine de sarrasin} ; 3,5\euro{}/kg
+	\item[$\triangle$] \textbf{Farine de petit épeautre} ; 4,0\euro{}/kg
+
+\end{itemize}
+
+\section{Analyse de l'environnement socio-économique}
+
+Au-delà de la gamme de produits, le mode de commercialisation dépend de la capacité à les écouler dans un bassin de population, et de fixer les prix en fonction de ses revenus. Nous analysons l'environnement socio-économique autour de Grenoble, région dans laquelle sera implantée la ferme.
+
+\subsection{Zone de chalandise}
+
+La zone de chalandise pour mon projet est définie à partir de la zone accessible à 1h10 en voiture, en partant de la ferme. Celle-ci étant \textit{a priori} basée à Mens, j’ai pu définir cette zone à partir d’une isochrone de 1h10, que l’on peut voir sur la carte sur la figure \ref{fig:chalandise}. 
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.2]{zone_chalandise.jpeg}
+	\caption{Carte isochrone de la région grenobloise, en partant de Mens (Trièves) avec 1h10 de trajet en voiture.}
+	\label{fig:chalandise}
+\end{center}
+\end{figure}
+
+On remarque l’effet « autoroute » : la voie rapide à Monestier de Clermont permet d’allonger les zones accessibles vers le nord, notamment toute la vallée du Grésivaudan, jusqu’aux portes de Chambéry, et tout le pays Voironnais. Alors qu’au sud, on parvient jusqu’à Gap ou Die maximum, pourtant plus proches par route ou vol d’oiseau. 
+
+La valeur de 1h10 parcourue en voiture était une valeur qui me semblait raisonnable pour une demie-journée de livraison. J’ai commencé à me baser sur une heure de route, mais ajouter 10 min allongeait notablement la zone couverte. Evidemment, pour minimiser le temps de trajet et le carburant, je pense me focaliser d’abord sur des ventes au plus près, en visant les zones dans cet ordre : Trièves, sud de Grenoble, Grenoble, Grésivaudan. Cette isochrone permet néamoins d'avoir une idée de la zone accessible dans le cas où mes débouchés sont restreints. 
+
+\subsection{Clientèle : pouvoir d'achat et densité de population}
+
+Les produits vendus - pain, farine – s’adressent à une clientèle très large, donc ne ciblent pas une catégorie en particulier. Néanmoins, le monde de production et l’argumentation – agriculture biologique, agroécologie, local – s’adresse clairement à une clientèle sensible aux enjeux environnementaux, qui correspond à une clientèle globalement urbaine et aisée (que l’on le regrette ou non) et qui a les moyens de dépenser plus pour son alimentation. C’est une opportunité de valoriser ces produits auprès de cette clientèle. D’autre part, ma gamme comporte des produits à faible teneur en gluten (pain petit épeautre, sarrasin), qui concernent une proportion grandissante de personnes.
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.3]{thune38.png}
+	\caption{Carte réprésentant, commune par commune, la densité de revenus par habitant et par unité de surface, sur les départements de l'Isère, de la Drôme et des Hautes-Alpes. Plus la couleur tire vers le jeune, plus le marché est important, avec à la fois une forte densité de population et/ou des revenus importants.}
+	\label{fig:thune38}
+\end{center}
+\end{figure}
+
+Pour déterminer plus précisément le lieu de vente, il peut être intéressant de connaître les zones de forte concentration de population, pour s’assurer des débouchés, mais aussi les zones correspondants à des populations à revenus assez élevés, généralement sensibles à l’argumentaire de vente : bio et local. 
+
+Les variables densités de population et revenus ne sont pas forcément corrélées : on peut avoir des villes avec peu d’habitants plus ou moins fortunés. Pour affiner l'analyse, j’ai regardé le « volume de revenus par hectare», c’est à dire pour chaque ville, le revenu moyen de cette ville multiplié par sa population à l’hectare. Cette grandeur correspond plus ou moins à la quantité "d'argent" par hectare : plus le volume de revenus et élevé, plus le marché est important et il est intéressant de s'y rendre. Pour cela, je me suis basé sur les données fournies par l’INSEE. Ce "volume d’argent par hectare" est montré sur la figure \ref{fig:thune38}, sur les départements de l’Isère, la Drôme et des Hautes Alpes. Sans surprise, on voit que les zones intéressantes sont Grenoble et la vallée du Grésivaudan. Le Trièves et le Champsaur présentent beaucoup moins de possibilités commerciales. Gap a un potentiel intéressant. Au vu de ma zone de chalandise, je pense viser la clientèle urbaine et sensible aux enjeux écologiques de l’agglomération Grenobloise.
+
+\subsection{Analyse de la concurrence}
+
+La concurrence principale dans mon projet est le paysan-boulanger en bio présent autours de l’agglomération iséroise. Ce sont les mêmes produits, réalisés avec une démarche similaire, s’adressant à une population similaire et vendus sur l’agglomération grenobloise. J’en compte actuellement 4 à Grenoble.
+
+J’ai répertorié dans la carte de la figure \ref{fig:concurrence} les différents acteurs que je connais, à date. Il doit certainement y en avoir d’autres dont je n’ai pas connaissance. 
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.18]{etude_concurrence.jpeg}
+	\caption{Carte réprésentant la concurrence potentielle dans l'agglomération grenobloise.}
+	\label{fig:concurrence}
+\end{center}
+\end{figure}
+
+La concurrence indirecte est plus diverse, car elle est constituée des acteurs ayant une production de pain ou de farine mais avec une démarche différente, sur laquelle j’ai le potentiel de me distinguer. Elle se compose (par ordre de concurrence décroissant) de paysans-boulangers en conventionnel, des boulangeries AB, des boulangeries classiques et enfin des minoteries (pour la farine). 
+
+Je n’ai pas inscrit les boulangeries sur la cartes de part leur nombre. A noter que parmi les boulangeries, il y a deux acteurs connus qui se distinguent dans l’agglomération : le pain Belledonne et le pain des cairns. Ils ne cultivent pas mais les produits vendus et la démarche sont très proches.
+
+Mes concurrents directs ont tous des productions assez importantes et diversifiées (jusqu’à une tonne hebdomadaire de pâtes, pain et brioche pour Allicoud) et ont une implantation marquée, centrée plutôt sur les marchés qui sont leur principal lieu de vente. 
+
+Comment pallier à ces faiblesses ? Tout d’abord, elles sont en partie dues au fait que je ne suis pas implanté, donc je ne peux pas encore diffuser ma communication, ni imaginer étendre ma gamme une fois ma production principale établie. Si je me positionne sur une stratégie commerciale sans marché, il faudra une communication très performante, qui reste à définir. 
+
+Il pourrait être intéressant aussi de s’attaquer au marché de la boulangerie "semi-industrielle" façon Marie-Blachère qui propose sous couvert d’une certaine image "tradi" des produits industriels. Ces enseignes sont implantées dans des zones commerciales (Comboire, Seyssins). Pourrait-on imaginer une collaboration avec d’autres structures pour venir les concurrencer, comme le "Vercors-lait" ? C’est une piste que je souhaiterais étudier. 
+
+\section{Stratégie commerciale}
+
+\subsection{Argumentaire}
+
+L'argumentaire commercial peut se baser sur différentes approches en lien avec mon projet : sur la qualité des pains paysan, sur la tradition qu'ils représentent et sur la démarche écologique de leur production. Voici quelques exemples d'argumentaires, à adapter en fonction du public et du contexte.
+
+\subsubsection{Sur la qualité des pains paysans}
+
+\begin{quote}
+
+\textit{"La concurrence avec les boulangers classique n’est pas directe, car ils ne proposent pas principalement des pains au levains traditionnels et je ne propose pas de pain blanc. Malheureusement, la boulangerie dans son ensemble cède petit à petit à la tentation du productivisme industriel, avec des produits uniformisés et moins nutritifs. \textbf{Quant au pain paysan au levain traditionnel, cultivé en agroécologie, il est le fruit d'une fabrication délicate et de recettes traditionnelles. Les variétés anciennes de blé utilisées sont moulues sur pierre et donnent un pain au goût exceptionnel, d'une grande richesse nutritive limitant les intolérences au gluten.}"}
+
+\end{quote}
+
+\subsubsection{Sur la tradition et l'histoire du pain}
+
+\begin{quote}
+\textit{"L'expression « long comme un jour sans pain », traduit bien qu'au delà d'un aliment de base, il est encore essentiel dans un repas. Et \textbf{plus qu’un aliment, le pain est une tradition, un symbole de l’agriculture Française, qui caractérise notre nation peut être plus que tout}. Nul part ailleurs dans le monde, il existe un pain digne de ce nom que l’on peut trouver ici dans une simple boulangerie ici : c’est une exception française qui nous caractérise tant. A travers le pain, c’est 2000 ans d’histoire que l’on porte à nos lèvres; ce sont les générations de paysans qui ont laborieusement façonné nos paysages à travers la culture céréalière ; c’est la révolution française, déclenchée par le manque de pain, portée par l’espoir de la liberté. Mais le pain, c'est avant tout un art subtil pour sa fabrication, qui est à peine décrypté par la chimie moderne, transmis à travers le dur labeur des paysans, meuniers et boulangers."}
+\end{quote}
+
+
+\subsubsection{Sur la nécessité du pain et des céréales en agroécologie}
+
+\begin{quote}
+
+\textit{"Dans un monde bientôt bouleversé par le changement climatique, un profond désir de changement s’empare de la société, pour un monde plus écologique. Si nous avons tous l’image du petit maraîcher comme typique du jeune néo-rural, partant en première ligne du combat écologiste, le maraichage pur est une activité historiquement récente, qui nécessite un apport important d’intrants de toute sorte. De fait, sa généralisation à l’ensemble de l’agriculture n’est possible, ni souhaitable. Nous ne mangeons pas que des légumes, loin s’en faut ! Si la culture céréalière était la culture la plus répandue, c’est parce qu’elle nécessite beaucoup moins de fertilisation et d’eau. \textbf{Le pain paysan est une réponse aussi indispensable au défi écologique qui nous fait face. Le promouvoir, c'est lutter pour la révolution agroécologique.}"}
+
+\end{quote}
+
+\subsection{Vente en magasin}
+
+Pour mes produits, je choisis préférentiellement la vente en magasin bio, de producteur ou AMAP. L’activité commerciale n’est ni mon point fort ni ma passion, je souhaite donc réduire le temps dédié à la vente. 
+
+Les magasins bio et de producteurs "sous-traitent" cette partie contre une marge, mais le temps dédié est seulement celui de la livraison. La vente de pain et de farine est courante, c’est même un produit demandé, où la demande est plus forte que l’offre. L’avantage de ce canal de distribution est le gain de temps, il n’y a pas à tenir un stand une demie journée durant, il n’y a que la livraison à faire. 
+Avantage : le gain de temps. Il n’y a que la livraison à faire. La demande est forte, et il y a possibilité de ne faire que quelques tournées par semaine. Il est facile d’écouler la farine pour bien la valoriser. 
+Inconvénients : Le principal inconvénient est que ces structurent prennent une marge, qui peut être plus ou moins grande (20 \% magasin de producteur, 28 \% magasins bio). D’autre part, les magasins ne prennent qu’une quantité limitée, il faut donc prévoir potentiellement une grande tournée pour écouler la marchandise.
+
+Globalement, je préfère perdre une partie de la valeur ajoutée de mes produits plutôt que consacrer beaucoup de temps à la vente. Je préfère par ailleurs garder le temps économiser à la production ou pour élargir ma gamme. 
+
+Les AMAP peuvent être intéressantes pour la distribution de pain : il est beaucoup plus facile d’ajouter un pain à un panier que de composer avec tous les légumes. D’autre part, il y a aussi une forte demande de la part des AMAP pour ajouter du pain dans leur panier hebdomadaire. C’est une source de revenu stable, avec une bonne visibilité sur la production. 
+
+\subsection{Politique de prix}
+
+Dans un système paysan-boulanger, la valeur ajoutée provient principalement de la transformation de la farine en pain et peu des matières premières (farine ou chaleur), c’est-à-dire que le coût est essentiellement un coût de main d’oeuvre. Dans une moindre mesure, il est aussi indirect à travers les investissements importants nécessaires pour démarrer l’activité. Etant à mon compte, il n’y a pas de limite basse à mon salaire (hélas) contrairement à un salarié. Le cout de revient est donc à priori faible, mais il me reste à le déterminer précisément. 
+
+\begin{figure}[h!]
+\center
+\footnotesize
+\begin{tabular}{ | p{3cm} | p{3cm}| p{3cm}|}
+\hline
+	 Produit & Prix de vente (\euro{}/kg) & Prix de vente effectif en magasin (\euro{}/kg) \\ \hline
+	 \hline
+	Pain complet & 4 & 5 \\ \hline
+	Pain campagne & 4 & 5 \\ \hline
+	Pain sarrasin & 6 & 7.5 \\ \hline
+	Pain petit épeautre & 7 & 8.75 \\ \hline
+	\hline
+	Farine blé & 1.5 & 1.88 \\ \hline
+	Farine seigle & 2 & 2.5 \\ \hline
+	Farine petit épeautre & 4 & 5 \\ \hline
+	Farine sarrasin & 3.5 & 4.38 \\ \hline
+\end{tabular}
+\caption{Récapitulatif des prix pour la gamme principale. Le prix de vente correspond aux prix encaissé par la ferme, le prix de vente effectif au prix de vente en magasin avec une commission moyenne de 25\%.}
+\label{tab:prix}
+\end{figure}
+
+Je compte de toute façon déterminer mes prix sur ceux de la concurrence et aussi en fonction du chiffre d’affaire à l’hectare de mes différentes productions. Mes estimations de prix de vente par produit sont données dans le tableau \ref{tab:prix}, pour caler les prix de vente effectif (avec une marge de 25\%) en magasin. Je fixe le prix de vente de sorte à ce que le prix effectif soit aligné avec ceux de la concurrence. Le prix de base est celui du pain complet et du pain de campagne, à 5\euro{}/kg, qui représente bien l’essentiel des ventes.
+
+Les autres produits, à base de farine d’autres céréales que le blé, sont bien moins productifs à l’hectare. En particulier le petit épeautre, qui pour un kg de grain donne 440g de farine (alors que le blé donne presque 800 grammes de farine !). Leur prix est nécessairement plus élevé. 
+
+\subsection{Communication}
+
+Ne visant \textit{a priori} pas une vente directe sur les marchés, ma structure aura moins de visibilité auprès du public que d'autres acteurs présents sur ce mode de commercialisation. Pour y remédier, il faut dévelloper une communication sur les produits et les activités de la ferme.
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.35]{logo_ferme.pdf}
+	\caption{Proposition de logo pour la ferme.}
+	\label{fig:logo}
+\end{center}
+\end{figure}
+
+Les réseaux sociaux et le web opèrent un rôle majeur dans la communication, que ce soit celle des individus ou des entreprises. L’agriculture, dont l’image n’est pourtant pas associée à la sophistication technologique ou en communication, s’est pourtant largement emparé de ces canaux pour partager son quotidien, ses expérimentation ou ses produits. Dans le cadre de ma communication, il serait envisageable de créer :
+\begin{itemize}
+
+	\item[$\circ$] Un site internet, dûment référencé par des moteurs de recherches\footnote{Je pense naturellement à Google, et en particulier Google Maps.}, contenant une description de la ferme et de ses activités, régulièrement mis à jour pour les montrer sous un angle positif. La réalisation d'un tel site web coûte aux alentours de 500\euro{}, mais que je peux réaliser moi-même, y compris les graphismes, comme cette proposition de logo en figure \ref{fig:logo}.
+	
+	\item[$\circ$] Une compte facebook, extrêmment simple et rapide à mettre en place. Il faut néanmoins régulièrement l'animer et l'alimenter pour qu'il soit suivi.
+	
+	\item[$\circ$] Un compte instagram, très simple à mettre en place. De la même façon que facebook, il faut régulièrement le mettre à jour avec des photographies stylisées dans l'idéal.
+
+\end{itemize}
+
 \chapter{Culture des céréales}
+\label{chap:cereales}
 
 \section{Contraintes du système paysan-boulanger}
 
@@ -272,7 +483,7 @@ Cette rotation est relativement "classique" en grandes cultures bio, avec un cho
 
 \subsection{Gestion de l'interculture}
 
-Dans la rotation, il y a deux successions $\left\langle \right. $culture de d'hiver $\left\rangle \right. $ $\longrightarrow$ $\left\langle \right. $culture de printemps$\left\rangle \right. $. Comme la culture d'hiver est récoltée entre mi-juillet et début août et la culture de printemps n'est semée qu'en avril-mai, il y a une période de 9 mois avec un sol qu'avec les chaumes de céréales, mais sans culture vivante. Pour éviter l'apparition d'adventices et d'enrichir le sol avec un couvert végétal vivant, il est agronomiquement très intéressant d'implanter une culture intermédiaire, sans récolte à la suite de la culture d'hiver. 
+Dans la rotation, il y a deux successions $\left\langle \right. $culture de d'hiver $\left\rangle \right. $ $\longrightarrow$ $\left\langle \right. $culture de printemps$\left\rangle \right. $. Comme la culture d'hiver est récoltée entre mi-juillet et début août et la culture de printemps n'est semée qu'en avril-mai, il y a une période de 9 mois avec un sol n'ayant que les chaumes de céréales, mais sans culture vivante. Pour éviter l'apparition d'adventices et pour enrichir le sol avec un couvert végétal vivant, il est agronomiquement très intéressant d'implanter une culture intermédiaire, sans récolte à la suite de la culture d'hiver. 
 
 En effet, implanté en août, ces cultures ont un potentiel de production de biomasse important, permettent de contrôler l'enherbement et de retenir les éléments minéraux dans le sol dans leur organisme. Ces cultures n'ont pas de rentabilité directe, il faut que leur implémentation et leur destruction pour la culture suivante soit simple. Je choisis donc des cultures plutôt sensible au gel ou à un passage mécanique, de sorte à ce qu'elle soit morte en sortie d'hiver ou peu vigoureuse. 
 
@@ -296,7 +507,8 @@ Combien de temps, de carburant et d'argent faut-il pour travailler mécaniquemen
 
 \begin{figure}[h!]
 \center
-\begin{tabular}{ | p{2cm} | p{2cm}| p{2cm}| p{2cm} | p{1,5cm} | p{2cm} | p{2cm}| }
+\footnotesize
+\begin{tabular}{ | p{1,6cm} | p{1,6cm}| p{2cm}| p{1,6cm} | p{1,5cm} | p{2cm} | p{1,8cm}| }
 \hline
 	Tâche & Coût / ha (\euro{}/ha) & Coût presta. / ha (\euro{}/ha) & Temps / ha (h/ha) & Temps total (h) & Conso. GNR / ha (L/ha) & Conso GNR horaire (L/h) \\ \hline
 	Herse & 15 & 30 & 0.3 & 4.5 & 3 & 10 \\ \hline
@@ -315,8 +527,9 @@ Combien de temps, de carburant et d'argent faut-il pour travailler mécaniquemen
 La première colonne, "Coût / ha (\euro{}/ha)", comprend l'ensemble des charges de mécanisation, dont l'amortissement, pour une utilisation "normale" en grandes cultures, c'est-à-dire environ 600h/an. Les valeurs dans le cas de la rotation proposée à la figure \ref{fig:rot_cercle} sont présentées en \ref{tab:W_sol2}, avec les itinéraires techniques décrits dans la partie \ref{part:rot_detail}, en prenant en compte les couverts d'interculture.
 
 \begin{figure}[h!]
+\footnotesize
 \center
-\begin{tabular}{ | p{2cm} | p{2cm}| p{2cm}| p{2cm} | p{1,5cm} | p{2cm} | }
+\begin{tabular}{ | p{1,6cm} | p{1,6cm}| p{2cm}| p{2cm} | p{1,5cm} | p{1,8cm} | }
 \hline
 	Tâche & Opérations par an & Coût total (\euro{}) & Coût total presta. (\euro{}) & Temps total (h) & Conso. GNR totale (L) \\ \hline
 	Herse & 6 & 225 & 450 & 4.5 & 45 \\ \hline
@@ -335,13 +548,6 @@ La première colonne, "Coût / ha (\euro{}/ha)", comprend l'ensemble des charges
 
 Avec à peine 60h de travaux de culture, le temps de travail reste très limité. Ce n'est pas surprenant pour 20ha avec la moisson et les coupes qui sont sous-traitées. Si le coût de la prestation semble réaliste, il faut néanmoins relativiser le coût total de 5300\euro{}, qui part de l'hyothèse d'une utilisation intensive du tracteur. Ces coûts seront rediscutés au chapitre \ref{part:chap_eco}.
 
-
-\section{Stockage du grain}
-
-\subsection{Céréales}
-
-\subsection{Cas du sarrasin}
-
 \subsubsection{Mécanisation}
 
 L'ensemble de l'outillage mécanique est estimé à 50 000\euro{}, avec un amortissement sur 12 ans, soit 4167\euro{} par an.
@@ -352,25 +558,103 @@ Le carburant, le gazole non routier (GNR), est pris à 0,85\euro{}/l\footnote{Il
 
 Les prestations incluent les coupes et les récoltes, qui représentent 3000\euro{}.
 
+\chapter{Meunerie et boulangerie}
+
+\section{Stockage du grain}
+
+\subsection{Céréales}
+
+\subsection{Cas du sarrasin}
+
+\section{Meunerie}
+
+Matériel nécessaire : un moulin astrié. Comme difificle à trouver d'occasion, achat en neuf. ça permet de s'assurer de la fiabilité, c'est un rouage essentiel dans le fonctionnement de la ferme.
+
+\section{Boulangerie}
+
+\subsection{Technique de fabrication}
+
+Tradition levain, repos du pain, four à bois.
+
+\subsection{Aménagement}
+
+Travaux pour isoler et contrôler la température et l'humidité. 
+
+\subsection{Matériel nécessaire}
+
+Essentiel : 
+Pétrin mécanique : diminue grandement le temps de travail et la fatigue physique
+Four à bois grande capacité 200kg. Cher à l'investissmeent mais permet d'économiser sur l'énergie et de réaliser des fournées d'un bloc.
+
+\subsection{Organisation}
+
+2 fournées de 150kg pour 8h de travail chacune. Réalisées le soir tard ou le matin tôt
+
 \chapter{Analyse économique}
 \label{part:chap_eco}
-\section{Processus de fonctionnement global de la ferme}
+
+La partie précédente a agronomique a permis de voir la conduite des culture pour assurer à la ferme une production viable agronomiquement parlant. L'analyse économique sert à savoir si le projet est viable financièrement.
+
+\section{Processus de production global de la ferme}
+
+Pour réaliser l'analyse économique de la ferme, \textbf{il faut avoir une vue globale sur l'ensemble de ses productions, qui feront son chiffre d'affaire, mais aussi des intrants nécessaires à cette production, pour estimer les charges}. Un système paysan-boulanger est plus complexe que les grandes cultures, car il y a trois processus de production : la culture des céréales, la meunerie et la boulangerie. Les schémas présentés dans la suite permettent de comprendre les différentes sources de revenus et les postes de charges spécifiques à chaque production.
+
+\subsection{Culture des céréales}
+
+La conduite des céréales a été présentée au chapitre \ref{chap:cereales}. Il est résumé, dans une vision comptable dans la figure \ref{fig:flux_champ}. 
+
+Pour produire, le champ "reçoit" des semences commerciales (prairie semée, soja, blé, et couverts d'interculture) ainsi que du travail mécanique, consommant 670L de GNR (ou l'équivalent de 7600\euro{} de travail en prestation).
+
+
+Chaque année, une partie de la production de grain est réutilisée en semence (paysanne). Finalement, une fois déduite les besoins en semences, la production de grain s'élève à :
+\begin{itemize}
+
+\item[$\diamondsuit$] 114 qx de blé tendre, sur 4,75ha ; 
+\item[$\diamondsuit$] 17,63 qx de seigle, sur 0,75ha ; 
+\item[$\diamondsuit$] 27,6 qx d'engrain, sur 2 ha ; 
+\item[$\diamondsuit$] 24,1 qx de sarrasin sur 2,5ha ; 
+\item[$\diamondsuit$] 50 qx de soja sur 2,5ha.
+
+\end{itemize}
+En grain, seul le soja est vendu directement en coopérative, au cours de 700\euro{} la tonne ; le reste est sotcké en silo avant de rejoindre la meunerie.
+
+Le fourrage est exporte deux année sur trois, soit 500 quitaux de matière sèches. Le reste est laissé sur place pour apporter de la matière organique au sol.
 
 \begin{figure}[h!]
 \begin{center}
-	\includegraphics[scale=0.7]{flux_physique_champ.pdf}
-	\caption{Parcelle de blé, fin novembre. Le blé a levé, mais on voit de nettes traces d'érosion et de tassement suite à un semis dans des conditions difficiles : terrain mal ressuyé et en pente.}
-	\label{fig:rot_cercle}
+	\includegraphics[scale=0.6]{flux_physique_champ.pdf}
+	\caption{Description des flux physiques nécessaire à la bonne production des cultures. Les intrants sont les semences et le carburant pour le tracteur (ou la prestation pour réaliser les différentes tâches). Les productions de grains sont en partie (blé, seigle, engrain et sarrasin) utilisées en semences paysannes, le reste est sotcké en silo. Une année sur 3, le fourrage est laissé sur place, soit l'équivalent de 250qx de matière sèche.}
+	\label{fig:flux_champ}
 \end{center}
 \end{figure}
+
+\subsection{Meunerie}
+
+L'ensemble des grains, sauf le soja, sont moulus pour être valorisé en farine, puis, en partie, en pain. Le rendement en farine\footnote{C'est le rapport entre la masse de farine obtenue et la masse de graine moulue.} est variable selon le type de grain : le meilleur rendement est celui du blé, le plus faible est celui du petit épeautre, qu'il faut décortiqué avant de moudre.
+
+La production totale de farine s'élève à :
+\begin{itemize}
+
+\item[$\diamondsuit$] 8 940kg de farine de blé ; 
+\item[$\diamondsuit$] 1 040kg de farine de seigle
+\item[$\diamondsuit$] 1 325kg de farine de petit épeautre; 
+\item[$\diamondsuit$] 1 530 kg de farine de sarrasin ; 
+
+\end{itemize}
 
 \begin{figure}[h!]
 \begin{center}
 	\includegraphics[scale=0.7]{flux_physique_moulin.pdf}
-	\caption{Parcelle de blé, fin novembre. Le blé a levé, mais on voit de nettes traces d'érosion et de tassement suite à un semis dans des conditions difficiles : terrain mal ressuyé et en pente.}
-	\label{fig:rot_cercle}
+	\caption{Description des flux physiques nécessaire à la bonne production des cultures. Les intrants sont les semences et le carburant pour le tracteur (ou la prestation pour réaliser les différentes tâches).}
+	\label{fig:flux_moulin}
 \end{center}
 \end{figure}
+
+Au débit de 15kg de grain moulu par heure, il faut au total 1200h environ à l'année pour moudre l'ensemble du grain, soit en moyenne 3h20min par jour. Le moulin consomme alors 1 200kWh d'électricité. Le grain est moulu au fur et à mesure de la fabrication du pain. 
+
+\subsection{Boulangerie}
+
+Une fois le grain moulu, une partie seulement de la farine est utilisée pour la boulangerie. En effet, la quantité de pain maximale que je peux produire est de 300kg, afin de limiter le temps de travail. Pour comparer les besoins en boulangerie avec la production de farine, il faut mettre en rapport 
 
 \begin{figure}[h!]
 \begin{center}
@@ -379,7 +663,6 @@ Les prestations incluent les coupes et les récoltes, qui représentent 3000\eur
 	\label{fig:rot_cercle}
 \end{center}
 \end{figure}
-
 
 \section{Bilan de départ}
 
@@ -392,5 +675,7 @@ Les prestations incluent les coupes et les récoltes, qui représentent 3000\eur
 \subsection{Rentabilité des différents produits}
 
 \subsection{Faut-il acheter son matériel agricole ?}
+
+\section{Choix des statuts juridique, social et fiscal}
 
 \end{document}
