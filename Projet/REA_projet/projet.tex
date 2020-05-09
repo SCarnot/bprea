@@ -4,6 +4,7 @@
 \usepackage[francais]{babel}
 \usepackage[T1]{fontenc}      
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage[top=3.5cm, bottom=3cm, left=3.0cm, right=3.0cm]{geometry}
 \usepackage{graphicx}
 \usepackage{eurosym}
@@ -101,6 +102,7 @@ Pas peur de lâcher de la thune à l'investissement pour être le plus efficacee
 La gamme proposée se construit sur les produits issus des céréales et de leur transformation : \textbf{le pain et la farine}. Il s'agit là de denrées de base, dont les débouchés sont certains car la demande est forte, mais à construire. Il est à noter que la crise sanitaire du COVID-19 a montré un engouement surprenant pour la farine, qui, s'il ne sera pas aussi intense après cette crise, a toute les chances d'être durable. Enfin, si le label AB augmente le prix des produits, c'est aussi un solide argument de vente auprès d'un public de plus en plus sensible aux enjeux écologiques. 
 
 \subsection{Pains}
+\label{part:pains}
 
 \subsubsection{Gamme principale}
 
@@ -108,10 +110,10 @@ L'offre de pain doit se baser en grande partie sur des pains "classiques", à la
 
 \begin{itemize}
 
-	\item[$\triangle$] \textbf{pain de campagne} : 4\euro{}/kg, farine de blé T80 , farine de seigle
-	\item[$\triangle$] \textbf{pain complet} : 4\euro{}/kg, farine T130, son
-	\item[$\triangle$] \textbf{pain au sarrasin} : 6\euro{}/kg, farine de sarrasin (60\%), farine de blé T80
-	\item[$\triangle$] \textbf{pain de petit épeautre} : 7\euro{}/kg, farine de petit épeautre
+	\item[$\triangle$] \textbf{pain de campagne} : 60\% de la gamme, farine de blé T80 , farine de seigle
+	\item[$\triangle$] \textbf{pain complet} : 20\% de la gamme, farine T130, son
+	\item[$\triangle$] \textbf{pain au sarrasin} : 10\% de la gamme, farine de sarrasin (60\%), farine de blé T80
+	\item[$\triangle$] \textbf{pain de petit épeautre} : 10\% de la gamme, farine de petit épeautre
 
 \end{itemize}
 
@@ -254,6 +256,7 @@ Globalement, je préfère perdre une partie de la valeur ajoutée de mes produit
 Les AMAP peuvent être intéressantes pour la distribution de pain : il est beaucoup plus facile d’ajouter un pain à un panier que de composer avec tous les légumes. D’autre part, il y a aussi une forte demande de la part des AMAP pour ajouter du pain dans leur panier hebdomadaire. C’est une source de revenu stable, avec une bonne visibilité sur la production. 
 
 \subsection{Politique de prix}
+\label{part:prix}
 
 Dans un système paysan-boulanger, la valeur ajoutée provient principalement de la transformation de la farine en pain et peu des matières premières (farine ou chaleur), c’est-à-dire que le coût est essentiellement un coût de main d’oeuvre. Dans une moindre mesure, il est aussi indirect à travers les investissements importants nécessaires pour démarrer l’activité. Etant à mon compte, il n’y a pas de limite basse à mon salaire (hélas) contrairement à un salarié. Le cout de revient est donc à priori faible, mais il me reste à le déterminer précisément. 
 
@@ -284,7 +287,7 @@ Les autres produits, à base de farine d’autres céréales que le blé, sont b
 
 \subsection{Communication}
 
-Ne visant \textit{a priori} pas une vente directe sur les marchés, ma structure aura moins de visibilité auprès du public que d'autres acteurs présents sur ce mode de commercialisation. Pour y remédier, il faut dévelloper une communication sur les produits et les activités de la ferme.
+Ne visant \textit{a priori} pas une vente directe sur les marchés, ma structure aura moins de visibilité auprès du public que d'autres acteurs présents sur ce mode de commercialisation. Pour y remédier, il faut développer une communication sur les produits et les activités de la ferme.
 
 \begin{figure}[h!]
 \begin{center}
@@ -630,7 +633,7 @@ Le fourrage est exporte deux année sur trois, soit 500 quitaux de matière sèc
 
 \subsection{Meunerie}
 
-L'ensemble des grains, sauf le soja, sont moulus pour être valorisé en farine, puis, en partie, en pain. Le rendement en farine\footnote{C'est le rapport entre la masse de farine obtenue et la masse de graine moulue.} est variable selon le type de grain : le meilleur rendement est celui du blé, le plus faible est celui du petit épeautre, qu'il faut décortiqué avant de moudre.
+L'ensemble des grains, sauf le soja, sont moulus pour être valorisé en farine, puis, en partie, en pain. Le rendement en farine\footnote{C'est le rapport entre la masse de farine obtenue et la masse de graine moulue.} est variable selon le type de grain : le meilleur rendement est celui du blé, le plus faible est celui du petit épeautre, qu'il faut décortiqué avant de moudre. Dans l'estiamtion du rendement, on a pris en compte les 2\% de perte.
 
 La production totale de farine s'élève à :
 \begin{itemize}
@@ -654,27 +657,386 @@ Au débit de 15kg de grain moulu par heure, il faut au total 1200h environ à l'
 
 \subsection{Boulangerie}
 
-Une fois le grain moulu, une partie seulement de la farine est utilisée pour la boulangerie. En effet, la quantité de pain maximale que je peux produire est de 300kg, afin de limiter le temps de travail. Pour comparer les besoins en boulangerie avec la production de farine, il faut mettre en rapport 
+Une fois le grain moulu, une partie seulement de la farine est utilisée pour la boulangerie. En effet, la quantité de pain maximale que je peux produire est de 300kg, afin de limiter le temps de travail. Pour comparer les besoins en boulangerie avec la production de farine, il faut regarder les besoins en farine pour chaque pain, estimés sur la figure \ref{fig:flux_boulange}. 
 
 \begin{figure}[h!]
 \begin{center}
 	\includegraphics[scale=0.5]{flux_physique_boulangerie.pdf}
-	\caption{Parcelle de blé, fin novembre. Le blé a levé, mais on voit de nettes traces d'érosion et de tassement suite à un semis dans des conditions difficiles : terrain mal ressuyé et en pente.}
-	\label{fig:rot_cercle}
+	\caption{Processus de fabrication des différents pains. Les valeurs indiquées représentent les proportions des ingrédients dans la fabrication du pain ou dans la répartion de la farine.}
+	\label{fig:flux_boulange}
 \end{center}
 \end{figure}
 
+%La farine de blé occupe une palce centrale, car elle rentre dans la fabrication des pains de camapgne, complets et au sarrasin. 
+
+A partir de la figure \ref{fig:flux_boulange}, on peut calculer les besoins en farine pour fabriquer 300kg de pain par semaine, avec la gamme définie en partie \ref{part:pains} : 
+\begin{itemize}
+
+	\item[$\ast$] 60 kg de pain complet : 40,2kg de farine de blé ;
+	\item[$\ast$] 180kg de pain de campagne : 107,3kg de farine de blé et 16,9kg de farine de seigle;
+	\item[$\ast$] 30kg de pain compleau sarrasin : 7,59kg de farine de blé et 11,85kg de farine de sarrasin ;
+	\item[$\ast$] 30kg de pain de petit épeautre : 19,7kg de farine de petit épeautre.
+
+\end{itemize}
+
+Au vu des quantités de farine nécessaire pour le pain, il existe un surplus hebdomadaire de 31kg de farine de blé, 5 kg de farine de seigle, 8kg de farine de petit épeautre et 20 kg de farine de sarrasin. On considère que le travail est effectué sur 48 semaines à l'année.
+
 \section{Bilan de départ}
+\label{bilan_ouverture}
+
+Le bialn comptable de départ comptabilise l'ensemble des biens mobiliers, immobiliers et fonciers nécessaire au démarrage de l'activité et les moyens à travers lesquels ils ont été financés
+
+\subsection{Actifs d'ouverture}
+
+L'actif d'ouverture représente la valeur comptable de l'ensemble des biens de l'entreprise au démarrage de l'activité, classé par liquidé croissante. Dans le projet présenté ici, il s'élève à environ 215 000\euro{}, dont les détails sont présentés dans le tableau \ref{tab:actif}. Les prix sont estimés en se basant sur les prix du marché, et en tenant en compte de l'autoconstruction, pour l'aménagement de la boulnagerie et les silos par exemple.
+
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{3cm} | p{2cm}| p{2cm}| }
+
+\hline
+	Foncier & Terrain & 60 000 \euro{} \\ 
+	 & Bâtiment & 50 000 \euro{} \\ 
+	 & Travaux & 10 000\euro{} \\ \hline
+	Matériel agricole & Tracteur & 30 000 \euro{} \\ 
+	 & Semoir & 1 000 \euro{} \\ 
+	 & Herse & 2 000 \euro{} \\ 
+	 & Charrue & 3 000 \euro{}\\ 
+	 & Déchaumeur & 5 000 \euro{}\\ 
+	 & Bineuse & 2 000 \euro{}\\ 
+	 & Silo & 5 000 \euro{}\\ \hline
+	Matériel boulangerie & Meule & 12 000 \euro{}\\ 
+	 & Ensacheuse & 2 000 \euro{}\\ 
+	 & Matériel divers & 1 000  \\ 
+	 & Pétrin & 3 000 \euro{}\\ 
+	 & Four & 10 000 \euro{}\\ \hline
+	Matériel divers & Camionnette & 8 000  \\ 
+	 & Outillage & 1 000 \euro{}\\ 
+	 & Caisse & 500 \euro{}\\ \hline
+	\textbf{Total actif immo.} & &\textbf{205 500 \euro{}}  \\ \hline
+	\hline
+	Stock & Grain & 3 757 \euro{}\\ 
+	 & Semence & 3 565 \euro{}\\ \hline
+	Liquidités & Banque & 2 000 \euro{}\\ \hline
+	\textbf{Total actif circulant} & & \textbf{9 322 \euro{}}  \\ \hline
+	\hline
+	\textbf{Total actif} & & \textbf{214 822 \euro{}}  \\ \hline
+
+\end{tabular}
+\caption{Actif du bilan d'ouverture. Les prix sont des estimations réalisés sur le site des constructeur ou sur des sites de matériel d'occasion.}
+\label{tab:actif}
+\end{figure}
+
+\begin{itemize}
+	
+	\item[$\bigstar$]	Le prix du foncier agricole, aux alentours de Mens, est estimé à environ 3 000\euro{} l'hectare. De même, un bâtiment agricole est estimé à 50 000\euro{}, dans lequel il serait possible de faire des travaux de l'ordre de 10 000\euro{} pour aménager la boulangerie.
+	\item[$\bigstar$] La valeur matériel agricole, acheté d'occasion, s'élève à 48 000\euro{}. Le tracteur nécessaire pour le projet doit avoir 90ch avec 5000h au compteur.
+	\item[$\bigstar$] Dans le matériel de boulangerie, la meule est achetée neuve, soit 12 000\euro{}, le reste peut être acheté d'occasion.
+	\item[$\bigstar$] Dans l'actif circulant, 7 322\euro{} sont prévus en achat de grains, directement pour démarrer l'activité de boulangerie et en semences pour démmarer la partie agricole. Ces montants sont justifiés dans la partie \ref{part:previsionnel}.
+\end{itemize}
+
+\subsection{Passifs d'ouverture}
+\label{part:passif}
+
+Le passif d'ouverture de l'entreprise correspond au financement de l'actif d'ouverture et son montant est nécessairement égal à ce dernier. Pour ce projet, il présenté dans le tableau \ref{tab:passif}. Il se décompose principalement dans les capitaux propres, c'est-à-dire les fonds dont je dispose personnellement pour démarrer l'activité, et les emprunts.
+
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{2,5cm} | p{3,5cm}| p{2cm}| }
+
+\hline
+	Capital individuel & Capitaux propres & 60 000 \euro{}\\ 
+	& DJA & 45 000 \euro{}\\ 
+	& Subventions & 0 \euro{}\\ \hline
+	\textbf{Total capital} & & \textbf{105 000} \euro{}\\ \hline
+	 \hline
+	Emprunts & Bancaire LT & 50 500 \euro{} \\ 
+	& Financement participatif & 50 000 \euro{}\\ 
+	& Bancaire CT & 9 322 \euro{}\\ \hline
+	\textbf{Total emprunts} & & \textbf{109 822 \euro{}}\\ \hline
+	 \hline
+	\textbf{Total passif} & &\textbf{214 822 \euro{}}\\ \hline
+
+\end{tabular}
+\caption{Passif du bilan d'ouverture.}
+\label{tab:passif}
+\end{figure}
+
+\begin{itemize}
+
+	\item[$\bigstar$] Dans le capitaux propres, je peux investir personnellement 60 000\euro{} dans la ferme. Je compte aussi sur une DJA d'un montant de 45 000\euro{}, qui correspond à l'installation d'un jeune agriculteur en zone de montagne (dont fait partie le Trièves), en AB, avec les investissements proposés sur le tableau \ref{tab:actif}.
+	
+	\item[$\bigstar$] Je dois compléter mes capitaux propres par des emprunts, pour atteindre la totalité de la valeur de l'actif de démarrage, soit une dette de 109 822\euro{}. Pour éviter des annuités trop importantes, les emprunts sont à long terme, pour financer principalement les actifs à l'amortissement long (cf le tableau \ref{tab:amortissement} ci-dessous), comme l'achat du terrain, des bâtiments ou de la meule. L'emprunt à court terme (CT) permet de financer les semences de la première année.
+	
+	\item[$\bigstar$] Je souhaiterais diversifier les sources d'emprunts. Plus particulièrement, je souhaiterais utiliser en partie un emprunt participatif à travers mon réseau, acommpagné par des structures adaptées, notamment celle proposée par Sébastien Kraft. Je compte lever 50 000\euro{} à un taux d'emprunt de l'ordre de 1\%.
+	
+	\item[$\bigstar$] Les financements long terme seront aussi complétés par des emprunts bancaire, aussi de l'ordre de 50 000\euro{}, à un taux de 1,5\%.
+
+\end{itemize}
+
+Le projet proposé nécessite donc des investissements élevés, propre au système paysan-boulanger, comme la valeur élevée du matériel nécessaire (matériel de boulangerie, de meunerie, etc.) mais aussi du fait de mes choix, principalement par l'achat du foncier et du matériel agricole : ces postes représentent 150 000\euro{} d'investissement.
+
+\subsubsection{Taux d'endettement}
+
+\textbf{Le taux d'endettement est de 51\%}, ce qui est élevé, mais acceptable pour une installation.
+
+\subsection{Annuités d'emprunts}
+
+Les emprunts envisagés dans le passif d'ouverture, détaillés en partie \ref{part:passif} engendrent des annuités à rembourser chaque année. Le tableau \ref{tab:annuites} présente les différents emprunts, avec le taux et leur durée.
+
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{3,5cm} | p{3cm}| p{1cm}| p{1,5cm}|p{2cm}| }
+\hline
+	& Montant de l'emprunt & Taux & Durée (ans) & Annuités \  \\ \hline
+	Bancaire LT & 56 257\euro{} & 1,5\% & 15 & 4 216\euro{} \\ \hline
+	Financement participatif & 50000\euro{} & 1\% & 10 & 5 279\euro{} \\ \hline
+	Bancaire CT & 3 565\euro{} & 4\% & 2 & 1 890\euro{} \\ \hline
+	\textbf{Total} & \textbf{109 822\euro{}} &  & & \textbf{11 385\euro{}}  \\ \hline
+\end{tabular}
+\caption{Dtail des emprunts, de leur taux, de leur durée et des annuités correspondantes.}
+\label{tab:annuites}
+\end{figure}
+
+\textbf{Les annuités s'élèvent donc à environ 10 000\euro{}/an, charges financières comprises.} Notons que l'emprunt courte durée, ne dure que 2 ans : les annuités sont donc 11 000\euro{} les deux premières années, puis à environ 9000\euro{} après. 
 
 \section{Produits et charges à terme}
 
+Pour évaluer la viabilité, il peut être intéressant de regarder les produits et les charges à terme, c'est-à-dire une fois que la production est stabilisée au objectifs visés. On ne prend donc pas ici la montée en puissance de la production les premières années : ce prévisionnel sur les 3 premières années est présenté en partie \ref{part:previsionnel}. Il est alors possible de calculer les charges associées, et d'en déduire ainsi la viabilité économique de la ferme.
+
+\subsection{Chiffre d'affaire}
+
+A partir des quantités de pains et de farines produites estimées dans la partie précédente, en considérant une production de 300kg de pain hebdomadaire, on peut calculer le chiffre d'affaire de la ferme. Avec les prix fixés à la partie \ref{part:prix}, il s'élève à 1 507\euro{} par semaine\footnote{On considère otujours 48 semaines de production à l'année.}, \textbf{soit 78 300\euro{} à l'année, en tenant compte aussi de la vente du soja et du fourrage.} On ne tient pas compte des aides de la PAC, qui pourraient être de l'ordre de 4000\euro{}.
+
+Le tableau suivant décrit la répartition du chiffre d'affaire en fonction des produits : 
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{3cm} | p{2cm}| p{2,5cm} |p{2cm}| }
+\hline
+	& Production annuelle (kg) & Prix de vente (\euro{}/kg) & CA annuel (\euro{})  \\ \hline
+	Pain complet & 2880 & 4 & 11 520 \\ 
+	Pain campagne & 8 640 & 4 & 34 560 \\ 
+	Pain sarrasin & 1 440 & 6 & 8 640 \\
+	Pain petit épeautre & 1440 & 7 & 10 080 \\ \hline
+	Total pain & 14 400 & - & 64 800 \\ \hline
+	\hline
+	Farine blé & 1 483 & 1.5 & 2 225 \\
+	Farine seigle & 224 & 2 & 448 \\ 
+	Farine petit épeautre & 379 & 4 & 1 517 \\ 
+	Farine sarrasin & 964 & 3.5 & 3 374 \\ \hline
+	Total farine & 3 050 & - & 7 564 \\ \hline
+	\hline
+	Soja & 5 000 & 0.7 & 3 500 \\ 
+	Prairie & 50 000 & 0.05 & 2 500 \\ \hline
+	\hline
+	\textbf{Total produits} & - & - & \textbf{78 364} \\ \hline
+\end{tabular}
+\caption{Chiffre d'affaire réalisés par les ventes du pain, de la farine et des produits végétaux.}
+\label{tab:CA}
+\end{figure}
+
+Le pain représente la grande partie du chiffre d'affaire, avec plus de 80\%, si la production visée est de 300kg par semaine. Il est donc essentiel que les débouchés commerciaux soient assurés. 
+
+Par ailleurs, on peut remarquer que le chiffre d'affaire est élevé pour une exploitation agricole avec un UTH d'une 20ha : c'est une des caractéristiques spécifiques au système paysan-boulanger. 
+
+\subsection{Charges}
+
+\subsubsection{Charges variables et de structure}
+
+Les dépenses liés directement à l'activité de l'entreprise, les charges, peuvent être ventilées suivant les postes d'activités (agricole, meunerie, boulangerie) ou en charge variables et de structure, comme présenté sur le tableau \ref{tab:charges}. On a pris en compte dans les charges variables prennent en compte toutes les dépenses qui augmentent en même temps que l'activité, comme les sachets de pain ou de farine. Les charges de structures regroupes les dépenses qui restent fixes quelques soit le niveau d'acitvité de l'entreprise. 
+
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{3cm} | p{4cm}| p{2cm}| }
+
+\hline
+	Charges variables & Gazole & 570 \\ 
+	&Prestations & 3 000 \\ 
+	&Entretien mat. agricole & 288   \\ 
+	&Semences & 1 779 \\ 
+	&Carburant livraison & 1 411\\ 
+	&Sachet pain & 360   \\
+	&Sachet farine & 113\\
+	&Eau & 27 \\ 
+	&Electricité moulin & 259 \\
+	&Bois four à pain & 2 340 \\ 
+	&Sel & 486 \\
+	&Autres ingrédients & 0 \\ \hline
+	Total &  & 10 632 \\ \hline
+	\hline
+	Charges de structure & Entretien mat. agricole & 300 \\
+	&Certif AB & 400\\
+	&Entretien véhicule & 500\\
+	&Eau courante & 160\\
+	&Elec. Courante & 850 \\ 
+	&Téléphone, internet & 500\\
+	&Consommables bureautique & 500 \\
+	&Divers entretien ménager & 500\\
+	&Assurance & 2 000\\ 
+	&Comptabilité & 1 000 \\
+	&Banque & 300\\
+	&MSA & 3 000\\
+	&Impôts & 0 \\
+	&Salariat & 0 \\ \hline
+	Total &  &10 010  \  \\ \hline
+	\hline
+	\textbf{Total charges} &  & \textbf{20 642} \  \\ \hline
+\end{tabular}
+\caption{Description des charges variables et de structures.Dans les charges variables, les montants sont calculés à partir des estimations réalisées sur les parties précédentes. Les charges de structures sont estimés à partir de valeurs "claissques".}
+\label{tab:charges}
+\end{figure}
+
+Quelques précisions sur ces charges :
+\begin{itemize}
+
+	\item[$\bigstar$] Le coût du GNR est pris à 0,85\euro{}. La consommation, le coût des prestations et les besoins en semences ont été estimés à 670L à la partie \ref{tab:W_sol2}. Le coût d'entretien du matériel agricole est estimé à 5\euro{}/h d'utilisation et 300\euro{} de frais fixes.
+	\item[$\bigstar$] La livraison est basée sur 2 aller-retours Mens-Grenoble par semaine, soit $2\times140$km avec une consommation de 7L/100km et un pris du carburant de 1,5\euro{}/L. L'entretien du véhicule est estimé à 500\euro{}/an.
+	\item[$\bigstar$] Côté boulangerie, on a cosidéré qu'il fallait un schaet par kilo de pain ou de farine, avec des prix de respectivement 0,03 et 0,04\euro{} le sachet. Le four consomme environ 1 stère de bois pour 400kg de pain\footnote{C'est une valeur aproximative qui dépend de l'isolation du four et du nombre de fournées par semaine.}, à 65\euro{} la stère. D'un point de vue énergétique, le bois est bien moins cher que l'électricité : 0,04\euro{}/kWh contre 0,17\euro{}/kWh, il est donc raisonnable d'investir dans un four à bois, amorti en 3 ans par rapport à un four électrique.
+	\item[$\bigstar$] Les consommations d'eau et d'électricité sont basées sur celles d'un ménage français moyen, ramené à une personne. 
+\end{itemize}
+
+\subsubsection{Charges d'amortissement}
+
+Les charges d'amortissement sont des dépenses indirectes, liées à l'usure naturelle du matériel. Leur calcul est basée sur des règles comptables artificielles mais ne réprésentent nécessairement de dépenses réelles sur les compte de l'entreprise : par exemple, le tracteur perdra d'une année sur l'autre une valeur comptable 4 285\euro{}, mais ne perdra pas pour autant de valeur utilitaire, s'il est parfaitement en état de marche. Les charges d'amortissement, présentées dans le tableau \ref{tab:amortissement}\footnote{On utilise un amortissement linéaire.}, permettent de tenir compte du coût de remplacement à terme du matériel.  
+
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{2,8cm} | p{2,8cm}| p{2cm}| p{2cm}| }
+\hline
+	& & Durée (années) & Montant\\\hline
+	Bâtiment & Achat & 15 & 3 333\euro{} \\ 
+	 & Travaux & 15 & 667\euro{} \\ \hline
+	Matériel agricole & Tracteur & 7 & 4 286\euro{} \\
+	 & Semoir & 7 & 143\euro{} \\
+	 & Herse & 7 & 286\euro{} \\ 
+	 & Charrue & 7 & 429\euro{} \\ 
+	 & Déchaumeur & 7 & 714\euro{} \\
+	 & Bineuse & 7 & 286\euro{} \\
+	 & Silo & 15 & 333\euro{} \\ \hline
+	Matériel boulangerie & Meule & 10 & 1 200\euro{} \\ 
+	 & Ensacheuse & 5 & 400\euro{} \\ 
+	 & Matériel boulangerie & 5 & 200\euro{} \\ 
+	 & Pétrin & 5 & 600\euro{} \\ 
+	 & Four & 10 & 1 000\euro{} \\ \hline
+	Matériel divers & Camionnette & 5 & 1 600\euro{} \\ 
+	 & Outillage & 5 & 200\euro{} \\ 
+	 & Caisse & 5 & 100\euro{} \\ \hline
+	 \hline
+	\textbf{Total} &  & & \textbf{15 776\euro{}} \  \\ \hline
+\end{tabular}
+\caption{Description des charges d'amortissement. L'amortissement du matériel agricole s'élève à 6 476\euro{}.}
+\label{tab:amortissement}
+\end{figure}
+
+L'amortissement s'élève au total à 15 776\euro{}, dont 6 476\euro{} de matériel agricole. Il est important de noter que le matériel agricole représente un coût élevé dans les charges d'amortissement, alors qu'il est utilisé 60h/an.
+
+\subsection{Indicateurs comptables}
+
+Une fois estimés les produits et les charges, il est possible d'en déduire la viabilité de l'entreprise, à travers des indicateurs comptables permettant d'estimer le revenu de l'agriculteur, sa capacité à réinvestir dan le matériel usé, ou la maîtrise de son endettement. 
+
+\subsubsection{EBE (Excédent brut d'exploitation)}
+
+L'excédent brut d'exploitation, ou EBE, permet de mesurer la valeur créée par la ferme, une fois déduites des produits les charges variables et de structure. Dans notre cas, l'EBE s'établit à :
+
+
+\noindent\fbox{\parbox{\linewidth\fboxrule-2\fboxsep}{
+\textbf{EBE = 78 364\euro{} - 20 642 = 57 722\euro{}}
+}}
+
+Cet EBE va être ensuite réparti entre 3 postes : les amortissements à travers la capacité d'autofinancement, les annuités d'emprunts et le revenu disponible.
+
+\subsubsection{Bénéfice}
+
+Le bénéfice ou résultat d'exercice correspond à la valeur dégagée par l'entreprise une fois toutes les charges et annuités déduites du chiffre d'affaire. Dans notre cas, il s'élève à :
+
+\noindent\fbox{\parbox{\linewidth\fboxrule-2\fboxsep}{
+\textbf{Bénéfice} = Chiffre d'affaire - charges variables - charges de structure - amortissement - annuités  = \textbf{30 561\euro{}}}}
+
+C'est un bénéfice élevé au regard du chiffre d'affaire : la rentabilité est de 39\%.
+
+\subsubsection{Revenu disponible}
+
+Les annuités ont été estimées à environ 10 000\euro{}/an (cf tableau  \ref{tab:annuites}). Déduites à l'EBE, on trouve alors un revenu disponible de :
+
+\noindent\fbox{\parbox{\linewidth\fboxrule-2\fboxsep}{
+\textbf{Revenu disponible = 57 700\euro{} - 10 000 = 47 700\euro{}}
+}}
+
+\subsubsection{Capacité d'autofinancement et niveau des prélèvements privés}
+
+Le revenu disponible permet de financer \textbf{les prélèvements privés, à hauteur de 20 000\euro{}/an}. Le reste, 27 700\euro{}, permet de financer des investissements au sein de l'entreprise. Cette somme permet largement de couvrir la dépréciations du capital mesurée par les charges d'amortissement, ce qui se traduit par une excellente capacité d'autofinancement :
+
+\noindent\fbox{\parbox{\linewidth\fboxrule-2\fboxsep}{
+\textbf{Capacité d'autofinancement = (Revenu disponible - prélèvements privés)/amortissements = 175\%}
+}}
+
+\subsection{Conclusion}
+
+A terme, les indicateurs économiques de l'activité en régime de croisière sont plutôt bons : \textbf{la rentabilité élevée (39\%) permet d'extraire des prélèvements privés de 20 000\euro{} tout en ayant une très bonne capacité à investir}. Ce résultat est établi sur une hypothèse majeure : la production de pain est de 300kg par semaine par une personne, ce qui nécessite une organisation pour la fabrication du pain extrêmement minutieuse. 
+
+Nous allons étudier à la partie \ref{part:tps_travail} la faisabilité, en temps de travail, d'une telle hypothèse. Nous étudierons par ailleurs l'impact sur les résultats économiques d'une production de pain plus faible (manque de débouché, réduction du temps de travail) dans la partie \ref{part:reduc_pain}.
+
 \section{Prévisionnel des trois premières années}
+\label{part:previsionnel}
+
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{2,2cm} | p{0,5cm}| p{0,5cm}| p{0,5cm}| p{0,5cm}| p{0,5cm}| p{0,5cm}| p{0,5cm}| p{0,5cm}| p{1.2cm}| p{1.2cm}| }
+\hline
+	& T1 & T2 & T3 & T4 & T5 & T6 & T7 & T8 & Année 3 & Année 4 \  \\ \hline
+	Production pain & 0 & 50\% & 75\% & 75\% & 80\% & 80\% & 100\% & 100\% & 100\% & 100\% \\ \hline
+	Production farine & 0 & 50\% & 75\% & 75\% & 80\% & 80\% & 100\% & 100\% & 100\% & 100\% \\ \hline
+	Production blé, seigle, engrain & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 80\% & 80\% & 100\% \\ \hline
+	Achat grain & Non & Oui & Oui & Oui & Oui & Oui & Oui & Oui & Oui & Non \\ \hline
+\end{tabular}
+\caption{Description des charges d'amortissement. L'amortissement du matériel agricole s'élève à 6 476\euro{}.}
+\label{tab:amortissement}
+\end{figure}
+
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{3cm} | p{1,2cm}| p{1,2cm}| p{1,2cm}| p{1,2cm}| }
+\hline
+	& Année 1 & Année 2 & Année 3 & Année 4 \  \\ \hline
+	Produits & 34 895 & 67 506 & 78 196 & 78 364 \\ \hline
+	Charges & 21 154 & 26 330 & 22 362 & 20 641 \\ \hline
+	\textbf{EBE} & \textbf{13 741} & \textbf{41 176} & \textbf{55 834} & \textbf{57 723} \\ \hline
+	\hline
+	Annuités & 12 502 & 12 503 & 9 495 & 9 495 \\ \hline
+	Revenu dispo. & 1 239 & 28 673 & 46 339 & 48 228 \\ \hline
+	\textbf{Prélèvements privés} & \textbf{1 239} & \textbf{12 897} & \textbf{20 000} & \textbf{20 000} \\ \hline
+	\hline
+	\textbf{Résultat} & \textbf{-14 537} & \textbf{0} & \textbf{10 563} & \textbf{12 452} \\ \hline
+	Actif & 199 046 & 199 046 & 209 609 & 222 061 \\ \hline
+\end{tabular}
+\caption{Description des charges d'amortissement. L'amortissement du matériel agricole s'élève à 6 476\euro{}.}
+\label{tab:amortissement}
+\end{figure}
 
 \section{Analyse des performances}
 
 \subsection{Rentabilité des différents produits}
 
 \subsection{Faut-il acheter son matériel agricole ?}
+
+
+\subsection{Quelle est la quantité minimale de pain à produire pour atteindre un revenu de 20 000\euro{} annuel ?}
+\label{part:reduc_pain}
+
+\section{Temps de travail}
+\label{part:tps_travail}
+
+48 smeaines par an
+45h par semaine
+2 fournée de 8h, soi t150 kg.
 
 \section{Choix des statuts juridique, social et fiscal}
 
