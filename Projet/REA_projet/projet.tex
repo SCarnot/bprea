@@ -3,9 +3,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[francais]{babel}
 \usepackage[T1]{fontenc}      
+
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage[top=3.5cm, bottom=3cm, left=3.0cm, right=3.0cm]{geometry}
+\usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{eurosym}
 \usepackage{etoolbox} % Pour faire des citations dans le texte
@@ -18,28 +19,45 @@
 \title{Projet d'installation dans un système paysan-boulanger}
 \date{Mai 2020}
 
-\makeindex
-
 \begin{document}
 
 \maketitle
 
+\tableofcontents
+
 \chapter{Démarche, finalités et objectifs du projet}
 
-\section{Démarche personnelle : des technologies de pointes à la terre}
+\section{Présentation globale du projet de paysan-boulanger}
+
+Mon projet est de reprendre une ferme pour produire principalement du blé, du seigle, de l'engrain et du sarrasin avec une valorisation en farine et en pain. Située dans l'Isère, idéalement dans le Trièves, la ferme est propriétaire de 20ha de terrains et d'un bâtiment dédié à son activité agricole, de meunerie et de boulangerie. 
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.28]{trieves.jpg}
+\end{center}
+\end{figure}
+
+S'appuyant sur les principes agroécologiques, la production est biologique, et les pratiques culturales tendent à favoriser la biodiversité générale, à travers une rotation longue et diversifiée, la réhabilitation de haies et en réduisant au minimum l'utilisations d'intrants extérieurs, notamment issus des produits pétroliers.
+
+Les produits vendus sont les farines et le pain, qui est produit suivant les méthodes traditionnelles au levain. Le bassin de vente sera principalement l'agglomération grenobloise où se situe une forte densité de population à hauts revenus, avec la présence d'une clientèle sensible aux questions environnementales. La canal de vente sera prioritairement fait à travers des magasins bio ou de producteurs pour minimiser le temps dévolu à la commercialisation.
+
+D'un point de vue économique, le dimensionnement de la ferme permet d'envisager une production de 220 à 300kg de pain hebdomadaire, permettant d'envisager des revenus de l'ordre de 1700\euro{} par mois, en limitant le temps de travail à 50h par semaine. 
+
+Si l'activité est envisagée comme individuelle, je souhaite vivement m'associer avec des éleveurs pour l'acquisition du foncier. Les fermes à céder dans la région étant principalement des grandes structures de production animale, il me paraît pertinent d'envisager une recherche et une acquisition commune du foncier, avec des statuts autonomes. Cette démarche permet de garantir une certaine indépendance tout en mutualisant des ressources, et notamment le matériel.
+
+Cette présentation très générale de ce projet est présentée plus en détail dans la suite, à travers les motivations de départ, jusqu'aux différents choix technico-économiques.
+
+\section{Démarche personnelle : de la physique à la terre}
 
 Le projet de reconversion en paysan-boulanger présenté ici a été le fruit de longues réflexions, qui l'ont construit laborieusement mais consciensieusement. Depuis mon choix de me reconvertir dans l'agriculture, j'ai souvent changé de cap pour en arriver ici aujourd'hui ; et ce ne seront certainement pas les derniers amendements à ce projet. Néanmois, la direction à suivre semble être désormais la bonne : celle-ci s'est fixée autant à partir de mes réflexions que de mon vécu. Je vais ainsi commencer par présenter quelques éléments personnels, qui permettent de comprendre la plupart de mes choix et des orientations de mon projet.\textbf{ Je m'excuse auprès du lecteur pour ces digressions personnelles ; si celui-ci souhaite directement connaître le projet, il peut débuter sa lecture à la partie XX.}
 
 \subsection{Pourquoi cette reconversion agricole ?}
 
-D'où je viens : normale sup, thèse physqiue, IA. Ce que ça m'a apporté 
-Mode de vie : ce que j'en ai retenu
-Ce que j'ai appris : catastrophe climatique et pénurie des ressources. Comme bcp, j'ai lu les limties de la croissances.
-Disonnance cognotive
+Il n'y a pas si longtemps, les reconversions professionnelles étaient rares ; désormais, il existe une recrudescence de jeunes urbains quittant volontairement leur emploi de bureau en CDI pour se tourner vers des métiers plus manuels, ayant plus de sens. Je rentre pleinement dans ce tableau : j'ai débuté mes études supérieures à Grenoble pour intégrer une école parisienne, pour continuer en thèse de physique fondamentale. Comme tant d'autres provinciaux arrivés pour leurs études à Paris, j'y suis resté pour travailler car je m'y plaisais, mais aussi par la facilité d'y trouver un emploi.
 
-Comment vivre avec cela avec mon mode de vie parisien ? Des changements certes, mais cosmétiques. Le militantisme ne suffit pas 
+Alors que ces études de physique m'ont permis d'accéder à un niveau de vie confortable en travaillant dans l'intelligence artificielle, elles m'ont aussi permis de comprendre les enjeux écologiques dramatiques qui nous font face. Etant tourmenté par l'idée que je contribuais directement la catastrophe climatique et la pénurie des ressources fossiles à travers mon mode de vie, qui ne durerait pas, je me suis forgé l'idée qu'il était nécessaire de participer à un retour massif à la vie à la campagne, au travail de la terre. 
 
-Conséquence : je suis intimement convaincu de la nécessité d'un retour massif à la vie de camapgne et nécessairement à l'agriculture. 
+Cette conviction était nourrie par la recherche d'un métier avec du sens, accompagné d'un désintérêt croissant pour mon métier de \textit{data scientist} dans l'intelligence artificielle, aux applications aussi utopistes que futiles. D'autre part, je souhaitais de plus en plus exercer un métier manuel, avec des tâches variées, dans un mode de vie rural. L'agriculture semblait être la réponse à mes questionnements politiques et professionnels, et la formation BPREA le moyen d'en faire mon activité.
 
 \subsection{Pourquoi être paysan-boulanger ?}
 
@@ -65,7 +83,7 @@ De l'impératif à entamer une nécessaire et massive reconversion dans le monde
 
 Que cette représentation soit réaliste ou non, j'ai remarqué que c'est celle là qui imprègne l'imaginaire commun. Modèle pour certains, repoussoir pour d'autre, c'est  cette image en tête avec laquelle j'ai démarré ma reconversion. Je me suis dirigé vers la voie maraîchère, que j'ai pu rejoindre grâce à un heureux concours de circonstances rejoindre la formation TPH en janvier 2019 au CFPPA de Saint-Ismier. 
 
-A travers les stages dans divers exploitations maraîchères, j'ai pu affirmer mon choix de reconversion dans le monde agricole. Cependant, j'ai été interpellé des besoins en intrants extérieurs d'une exploitation maraîchère, principalement en amendement (fumier, engrais organiques ou minéraux) et en eau, dont la consommation nécessite impérativement un système conséquent d'irrigation. Et malgré l'exemple de la ferme du bec Hellouin, il semblait très difficile de se passer de tracteur ou de plastique, sans se tuer à la tâche. Même les maraîchers les plus "écolos" se sont résignés à des pratiques qu'ils voulaient éviter.
+A travers les stages dans divers exploitations maraîchères, j'ai pu affirmer mon choix de reconversion dans le monde agricole. Cependant, j'ai été interpellé des besoins en intrants extérieurs d'une exploitation maraîchère, principalement en amendement (fumier, engrais organiques ou minéraux) et en eau, dont la consommation nécessite impérativement un système conséquent d'irrigation. Et malgré l'exemple de la ferme du bec Hellouin, il semblait difficile de se passer de tracteur ou de plastique, sans se tuer à la tâche. Même les maraîchers les plus "écolos" se sont résignés à des pratiques qu'ils voulaient éviter.
 
 \textbf{Finalement, le maraîchage est-il généralisable à l'image de ces micro-fermes à l'ensemble de l'agriculture ? De part le besoin important en intrant, la réponse semble être négative.} Exigeant en eau et en fumure, les légumes nécessitent beaucoup plus d'eau que leur surface de production. Si la culture des fruits et légumes est ancienne, elle semblait plus se limiter à des grands potagers proches des fermes, en auto-consommation. De fait, historiquement le maraîchage pur semble s'être développé au début de la révolution industrielle, dans les zones marécageuses\footnote{Le temre "maraîchage" est dérivé de "marais".} de la périphérie des grandes villes pour subvenir au besoins des citadins, toujours plus nombreux. Les maraichers bénéficiaient des éfluents oragniques de la ville pour leur besoin en fumure. 
 
@@ -91,13 +109,100 @@ A l'issue de mes diverses expériences, j'ai choisi d'orienter mon projet agrico
 
 \section{Objectifs et finalités}
 
-\subsection{Démarche}
+Au fil de mes réflexions, j'ai pu petit à petit tracer les grandes lignes de ce que j'imaginais pour mon projet agricole, à travers une finalité pour point de mire et des objectifs pour y parvenir.
+
+\subsection{Finalité du projet}
+
+Initialement mu par l'idée d'une reconversion dans le monde agricole par un désir d'aller vers un métier manuel et par mes convictions écologiques, mes sensibilités personnelles m'ont poussé à m'orienter vers un projet de paysan-boulanger. J'ai pu alors définir la finalité globale de mon projet :
+
+\hspace{1cm}
+
+\noindent\fbox{\parbox{\linewidth\fboxrule-2\fboxsep}{
+Créer une ferme en agroécologie, économiquement viable, automne et centrée sur les céréales avec transformation en farine et en pain.
+}}
+\hspace{1cm}
+
+\subsection{Objectifs}
+
+Pour parvenir à cette finalité, j'ai pu distinguer 4 principaux objectifs: agroécologique, économique, d'autonomie et de production. Ces objectifs détermineront ensuite les choix et les orientations prises par le projet, qui sera détaillé dans les parties suivantes.
+
+\subsubsection{Objectifs agroécologiques}
+
+En sus des enjeux climatiques et de pénuries des ressources fossiles, l'agriculture est confrontée à d'autres graves problèmes environnementaux, en particulier l'érosion des sols ou la perte de biodiversité, représentant des périls tout aussi impérieux. 
+Sans rentrer dans une définition complexe de l'agroécologie, je souhaite que mon projet s'axe sur des pratiques culturales durables, dont certaines seront présentées en détail dans la partie \ref{chap:cereales}. En voici les principaux objectifs :
+
+\hspace{1cm}
+\begin{itemize}
+
+	\item[$\clubsuit$] Produire sans intrants chimiques, c'est-à-dire en agriculture biologique ;
+	\item[$\clubsuit$] Minimiser sa consommation de produits pétroliers et les émissions de CO2 ;
+	\item[$\clubsuit$] Préserver et développer la vie du sol et la biodiversité ;
+	
+	\item[$\clubsuit$] Participer à la préservation des paysages.
+
+\end{itemize}
+\hspace{1cm}
+
+\subsubsection{Objectifs économiques}
+
+Tout projet agricole, même ayant des pratiques agroécologiques, se doit d'atteindre une certaine rentabilité économique pour pérenniser son activité et payer dignement l'agriculteur. Venant d’un monde salarié à horaires fixes avec un salaire conséquent, le temps de travail et les revenus de l'activité agricole sont d'autant plus importants dans cette reconversion : une transition pas trop brutale diminue le risque d’échec. Ainsi, mes objectifs sont :
+
+\hspace{1cm}
+\begin{itemize}
+
+	\item[$\clubsuit$] Atteindre le revenu médian français pour les agriculteurs, soit environ 1 700\euro{}/mois ; 
+	\item[$\clubsuit$] Être résilient, en pouvant affronter une perte de récolte ou une charge exeptionnelle ;
+	\item[$\clubsuit$] Limiter le temps de travail au plus à 50h en moyenne hebdomadaire.
+
+\end{itemize}
+\hspace{1cm}
+
+Atteindre ces objectifs implique nécesairement d'\textbf{être très productif ; ainsi je pense qu'il ne faut pas hésiter à investir conséquement dans un équipement de qualité et performant, quitte à s'endetter au démarrage.} Un matériel de bonne qualité est certes plus cher, mais permet de réduire le temps de travail "caché" par les réparations, la manutention inutile et les réglages incessants.
+
+\subsubsection{Objectif d'autonomie}
+
+Ce projet agricole s'inscrit dans une vision à long terme\footnote{Par exemple, la rotation des culture s'étend sur 8 ans. Visualiser "seulement" 4 cycles correspond à 32 ans !}, ce qui s'inscrit idéalement dans une démarche autonome. Par exemple, le rétablissement des haies ne trouve d'intérêt que si elles sont pérénnisées : dans ce cadre, la location de terrain est un risque. J'envisage donc une association pour l'achat des terrains, à travers une SCI par exemple, qui sera détaillée dans la partie \ref{part:SCI}. Cette autonomie peut se concrétiser à travers ces objectifs :
+
+\hspace{1cm}
+\begin{itemize}
+
+	\item[$\clubsuit$] Être propriétaire du foncier et du bâti ; 
+	\item[$\clubsuit$] S'associer pour l'achat de foncier ;
+	\item[$\clubsuit$] Atteindre l'autonomie en intrants agrcioles.
+
+\end{itemize}
+\hspace{1cm}
+
+Le dernier objectif s'appuie sur l'idée que le projet doit être généralisable : il doit donc être capable de produire tout ce dont il a besoin, c'est-à-dire d'être autonomne agronomiquement parlant.
+
+\subsubsection{Objectif de production}
+
+La ferme a pour objectif la production de céréale sà destination de farine et de pain. Ces productions doivent répondre aux objectifs suivants :
+
+\begin{itemize}
+
+	\item[$\clubsuit$] Acquérir au minimum 18 hectares ;
+	\item[$\clubsuit$] Maîtriser la conduite des céréales ;
+	\item[$\clubsuit$] Valoriser le grain en farine.
+
+\end{itemize}
+\hspace{1cm}
+
+Ils permettent d'atteindre les objectifs précédents, notamment économiques : une surface minimale d'environ 18 ha est nécessaire pour atteindre le revenu envisagé.
+
+\subsubsection{Expérimentation de pratiques agricoles}
+
+Certains objectifs peuvent être contradictoires entre eux, comme par exemple l'atteinte de la viabilité économique avec l'utilisation d'un tracteur et la réduction de la consommation de pétrole, ou encore la maîtrise de l'enherbement par le labour et la lutte contre l'érosion du sol. L'idée est de démarrer le projet avec les méthodes de production actuelles pour le rendre viable humainement et économiquement dans un premier temps.  Une fois les processus bien établis, où je pourrai sm'assurer un revenu et du temps disponible, je souhaiterai expérimenter de nouvelles méthodes agricoles, pour répondres aux contradictions citées précédemment : par exemple, imaginer un jour de la traction animale pour certaines tâches, ou du semis sous couvert ?
+
+\subsection{Réalisation}
+
+Entre l'écriture de ce rapport présentant mon projet et sa réalisation concrète, de nombreuses étapes restent encore à accomplir, pendant quelques années. Je me dois en priorité de trouver des potentiels
+Pour mener à bien ce projet agricole, il me faudra du temps pour trouver des potentiels co-acquéreurs pour le foncier
+
+Recherche association avec éleveur pour la recherche et l'achat de foncier 
+
 
 Pas peur de lâcher de la thune à l'investissement pour être le plus efficacee et produire le plus par UTH
-
-\section{Présentation globale du projet}
-
-\subsection{Conditions pédo-climatiques}
 
 \chapter{Commercialisation}
 
@@ -382,6 +487,24 @@ En grandes cultures biologiques, les deux contraintes forte en AB sont la fertil
 \end{itemize}
 
 Il existe encore de nombreux critères, plus spécifiques aux successions d'une espèce par rapport à une autre. Evidemment, une rotation doit aussi prendre en compte les contraintes spécifiques à la ferme : présence ou non d'irrigation, conditions pédo-climatiques, impératifs économiques, etc.
+
+\subsection{Conditions pédoclimatiques}
+
+Le projet étant "théorique" dans le sens où je n'ai pas encore de foncier, je ne peux donc pas donner de caractéristiques pédo-climatiques précises. L'installation étant envisagée dans le territoire isérois et dans l'idéal dans le Trièves, il est possible d'avoir une idée du climat pour estimer la possibilité d'y faire pousser des céréales. Les terres en Isère sont très vériées géologiquement, et les conditions pédologiques seront donc à déterminer à l'installation.
+
+\subsubsection{Climat du Trièves}
+
+Le climat du Trièves subit les influences méditerranéennes et continentale, avec un climat semi-montagnard. Il se caractérise donc par des hivers froids et humides et un été plus chaud et sec. Par ailleurs, il se situe au nord de la limite climatique séparant les Alpes du Nord et la Provence\footnote{Le contraste des paysages de part et d'autre le col de la Croix Haute est saisissant ; au sud les paysages sont déjà provençaux, au nord, ils ressemblent déjà à ceux des Alpes septentrionales.} ; le climat est plus sec et doux en comparaison des massifs situé plus au nord de Grenoble, illustré par le diagramme climatique de la figure \ref{fig:climat}.
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.35]{climate-graph.png}
+	\caption{Diagramme climatique de la ville Cornillon-en-Trièves.}
+	\label{fig:climat}
+\end{center}
+\end{figure}
+
+Les précipiation annuelles sont de 977mm et la température moyenne de 8,3$^\circ$C, avec un mois de juillet particulièrement sec. Ce climat est tout à fait compatible avec la culture du blé, qui a besoin d'un hiver froid pour sa vernalisation et un début d'été sec pour sa maturation. Les précipitations sont largement suffisantes pour les besoins des céréales.
 
 \subsection{Rotation choisie}
 
@@ -1129,6 +1252,30 @@ Pour conclure, le système laisse une relative marge de maneuvre pour en vivre, 
 45h par semaine
 2 fournée de 8h, soi t150 kg.
 
-\section{Choix des statuts juridique, social et fiscal}
+\section{Choix du statut juridique, social et fiscal}
+
+\subsection{Statut juridique}
+
+Malgré un contexte démographique favorable\footnote{D'après la MSA, la moitié des agriculteurs devraient partir à la retraite dans les 10 prochaines années. Un départ massif qui ne semble pas, pour le moment, compensé par les installations.}, l'accessibilité au foncier agricole est une difficulté majeure pour les porteurs de projet, et plus particulièrement lors d'une installation hors cadre familial. Si cette problématique peut s'expliquer par de nombreux facteurs, le décalage sur les investissements nécessaires et sur la vision de l'agriculture entre les putatifs acquéreurs et les cédants semblent être une difficulté majeure. 
+
+En effet, sur le marché des cédants, se trouvent principalement des grandes exploitations en agriculture conventionnelle, très capitalistiques mais peu rentables ; alors que les porteurs de projets semblent de plus en plus se tourner vers des exploitations plus petites, avec moins d'investissements, et si possible avec une activité diversifiée pour améliorer leur rentabilité. 
+
+Une façon de surmonter ce déphasage entre l'offre et la demande, une possibilité serait une acquisition à plusieurs porteurs de projets sur une un bien
+
+\subsubsection{SCI : Acquisition du foncier}
+\label{part:SCI}
+
+\subsubsection{Entreprise agricole}
+
+
+\subsection{Statut social}
+
+\subsection{Statut fiscal}
+
+\subsubsection{Régime fiscal}
+
+Les deux régimes fiscaux, "micro BA" ou "réel", déterminent les assiettes fiscales de l'agriculteur. Lorsque le chiffre d'affaire est inférieur
+
+\subsubsection{Assujettisement à la TVA}
 
 \end{document}
