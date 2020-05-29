@@ -5,6 +5,7 @@
 \usepackage[T1]{fontenc}      
 
 \usepackage{amsmath}
+\usepackage{hyperref}
 \usepackage{amssymb}
 \usepackage[top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{graphicx}
@@ -18,6 +19,7 @@
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 \title{Projet d'installation dans un système paysan-boulanger}
 \date{Mai 2020}
+\author{Matthieu Santin}
 
 \begin{document}
 
@@ -29,7 +31,7 @@
 
 \section{Présentation globale du projet de paysan-boulanger}
 
-Mon projet est de reprendre une ferme pour produire principalement du blé, du seigle, de l'engrain et du sarrasin avec une valorisation en farine et en pain. Située dans l'Isère, idéalement dans le Trièves, la ferme est propriétaire de 20ha de terrains et d'un bâtiment dédié à son activité agricole, de meunerie et de boulangerie. 
+Mon projet est de reprendre une ferme pour produire principalement du blé, du seigle, de l'engrain et du sarrasin avec une valorisation en farine et en pain. Située dans l'Isère, idéalement dans le Trièves, la ferme est propriétaire de 20ha de terrain et d'un bâtiment dédié à son activité agricole, de meunerie et de boulangerie. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -37,19 +39,19 @@ Mon projet est de reprendre une ferme pour produire principalement du blé, du s
 \end{center}
 \end{figure}
 
-S'appuyant sur les principes agroécologiques, la production est biologique, et les pratiques culturales tendent à favoriser la biodiversité générale, à travers une rotation longue et diversifiée, la réhabilitation de haies et en réduisant au minimum l'utilisations d'intrants extérieurs, notamment issus des produits pétroliers.
+S'appuyant sur les principes agroécologiques, la production est biologique, et les pratiques culturales tendent à favoriser la biodiversité générale, à travers une rotation longue et diversifiée, la réhabilitation de haies et en réduisant au minimum l'utilisation d'intrants extérieurs, notamment issus des produits pétroliers.
 
-Les produits vendus sont les farines et le pain, qui est produit suivant les méthodes traditionnelles au levain. Le bassin de vente sera principalement l'agglomération grenobloise où se situe une forte densité de population à hauts revenus, avec la présence d'une clientèle sensible aux questions environnementales. La canal de vente sera prioritairement fait à travers des magasins bio ou de producteurs pour minimiser le temps dévolu à la commercialisation.
+Les produits vendus sont de la farine et le pain, qui est fait en suivant les méthodes traditionnelles au levain. Le bassin de vente sera principalement l'agglomération grenobloise où se situe une forte densité de population à hauts revenus, avec la présence d'une clientèle sensible aux questions environnementales. La canal de vente sera prioritairement fait à travers des magasins bio ou de producteurs pour minimiser le temps dévolu à la commercialisation.
 
 D'un point de vue économique, le dimensionnement de la ferme permet d'envisager une production de 220 à 300kg de pain hebdomadaire, permettant d'envisager des revenus de l'ordre de 1700\euro{} par mois, en limitant le temps de travail à 50h par semaine. 
 
 Si l'activité est envisagée comme individuelle, je souhaite vivement m'associer avec des éleveurs pour l'acquisition du foncier. Les fermes à céder dans la région étant principalement des grandes structures de production animale, il me paraît pertinent d'envisager une recherche et une acquisition commune du foncier, avec des statuts autonomes. Cette démarche permet de garantir une certaine indépendance tout en mutualisant des ressources, et notamment le matériel.
 
-Cette présentation très générale de ce projet est présentée plus en détail dans la suite, à travers les motivations de départ, jusqu'aux différents choix technico-économiques.
+Cette présentation du projet, très générale, sera détaillée dans les chapitres suivants sous tous ses aspects, à travers les motivations de départ, la commercialisation, les cultures, jusqu'aux différents choix technico-économiques.
 
 \section{Démarche personnelle : de la physique à la terre}
 
-Le projet de reconversion en paysan-boulanger présenté ici a été le fruit de longues réflexions, qui l'ont construit laborieusement mais consciensieusement. Depuis mon choix de me reconvertir dans l'agriculture, j'ai souvent changé de cap pour en arriver ici aujourd'hui ; et ce ne seront certainement pas les derniers amendements à ce projet. Néanmois, la direction à suivre semble être désormais la bonne : celle-ci s'est fixée autant à partir de mes réflexions que de mon vécu. Je vais ainsi commencer par présenter quelques éléments personnels, qui permettent de comprendre la plupart de mes choix et des orientations de mon projet.\textbf{ Je m'excuse auprès du lecteur pour ces digressions personnelles ; si celui-ci souhaite directement connaître le projet, il peut débuter sa lecture à la partie XX.}
+Le projet de reconversion en paysan-boulanger présenté ici a été le fruit de longues réflexions, qui l'ont construit laborieusement mais consciensieusement. Depuis mon choix de me reconvertir dans l'agriculture, j'ai souvent changé de cap pour en arriver ici aujourd'hui ; et ce ne seront certainement pas les derniers amendements à ce projet. Néanmois, la direction à suivre semble être désormais la bonne : celle-ci s'est fixée autant à partir de mes réflexions que de mon vécu. Je vais ainsi commencer par présenter quelques éléments personnels, qui permettent de comprendre la plupart de mes choix et des orientations de mon projet.\textbf{ Je m'excuse auprès du lecteur pour ces digressions personnelles ; si celui-ci souhaite directement connaître le projet, il peut débuter sa lecture à la partie \ref{part:finalites}.}
 
 \subsection{Pourquoi cette reconversion agricole ?}
 
@@ -81,13 +83,11 @@ De l'impératif à entamer une nécessaire et massive reconversion dans le monde
 \label{fig:test}
 \end{figure}
 
-Que cette représentation soit réaliste ou non, j'ai remarqué que c'est celle là qui imprègne l'imaginaire commun. Modèle pour certains, repoussoir pour d'autre, c'est  cette image en tête avec laquelle j'ai démarré ma reconversion. Je me suis dirigé vers la voie maraîchère, que j'ai pu rejoindre grâce à un heureux concours de circonstances rejoindre la formation TPH en janvier 2019 au CFPPA de Saint-Ismier. 
+Que cette représentation soit réaliste ou non, j'ai remarqué que c'est celle-là qui imprègne l'imaginaire commun. Modèle pour certains, repoussoir pour d'autre, c'est  avec cette image en tête que j'ai démarré ma reconversion. Je me suis dirigé vers la voie maraîchère, que j'ai pu rejoindre, grâce à un heureux concours de circonstances, la formation TPH en janvier 2019 au CFPPA de Saint-Ismier. 
 
-A travers les stages dans divers exploitations maraîchères, j'ai pu affirmer mon choix de reconversion dans le monde agricole. Cependant, j'ai été interpellé des besoins en intrants extérieurs d'une exploitation maraîchère, principalement en amendement (fumier, engrais organiques ou minéraux) et en eau, dont la consommation nécessite impérativement un système conséquent d'irrigation. Et malgré l'exemple de la ferme du bec Hellouin, il semblait difficile de se passer de tracteur ou de plastique, sans se tuer à la tâche. Même les maraîchers les plus "écolos" se sont résignés à des pratiques qu'ils voulaient éviter.
+A travers les stages dans divers exploitations maraîchères, j'ai pu affirmer mon choix de reconversion dans le monde agricole. Cependant, j'ai été interpellé de l'importance des besoins en intrants extérieurs d'une exploitation maraîchère, principalement en amendement (fumier, engrais organiques ou minéraux) et en eau, dont la consommation nécessite impérativement un système conséquent d'irrigation. Et malgré l'exemple de la ferme du bec Hellouin, il semblait difficile de se passer de tracteur ou de plastique, sans se tuer à la tâche. Même les maraîchers les plus "écolos" se sont résignés à des pratiques qu'ils voulaient éviter.
 
-\textbf{Finalement, le maraîchage est-il généralisable à l'image de ces micro-fermes à l'ensemble de l'agriculture ? De part le besoin important en intrant, la réponse semble être négative.} Exigeant en eau et en fumure, les légumes nécessitent beaucoup plus d'eau que leur surface de production. Si la culture des fruits et légumes est ancienne, elle semblait plus se limiter à des grands potagers proches des fermes, en auto-consommation. De fait, historiquement le maraîchage pur semble s'être développé au début de la révolution industrielle, dans les zones marécageuses\footnote{Le temre "maraîchage" est dérivé de "marais".} de la périphérie des grandes villes pour subvenir au besoins des citadins, toujours plus nombreux. Les maraichers bénéficiaient des éfluents oragniques de la ville pour leur besoin en fumure. 
-
-\textbf{Malgré son image liée à la permaculture et à l'écologie, le maraîchage pur ne serait-il pas paradoxalement apparu conjointement à la société thermo-industrielle ?}
+\textbf{Finalement, le maraîchage est-il généralisable à l'image de ces micro-fermes à l'ensemble de l'agriculture ? De part le besoin important en intrant, la réponse semble être négative.} Exigeant en eau et en fumure, les légumes nécessitent beaucoup plus d'eau que leur surface de production. Si la culture des fruits et légumes est ancienne, elle semblait plus se limiter à des grands potagers proches des fermes, en auto-consommation. De fait, historiquement le maraîchage pur semble s'être développé au début de la révolution industrielle, dans les zones marécageuses\footnote{Le terme "maraîchage" est dérivé de "marais".} de la périphérie des grandes villes pour subvenir au besoins des citadins, toujours plus nombreux. Les maraichers bénéficiaient des éfluents oragniques de la ville pour leur besoin en fumure. Malgré son image liée à la permaculture et à l'écologie, le maraîchage pur ne serait-il pas paradoxalement apparu conjointement à la société thermo-industrielle ?
 
 Pourquoi un tel engouement pour le maraîchage alors ? D'un point de vue économique, le maraîchage bénéficie d'un avantage majeur : le rendement à l'hectare étant très élevé, de l'ordre de 30 000\euro{}/ha, il est donc possible de s'installer avec peu de moyens sur une très petite surface. 
 
@@ -108,6 +108,7 @@ Lors d'un stage en juin 2019, j'ai pu découvrir le métier de paysan-boulanger 
 A l'issue de mes diverses expériences, j'ai choisi d'orienter mon projet agricole sur un système paysan-boulanger, adapté à mes moyens, à ma façon de travailler et à ma vision de l'groécologie. Cette année en BPREA m'a permis d'affiner mes réflexions sur la façon de conduire ce projet et de le concrétiser. 
 
 \section{Objectifs et finalités}
+\label{part:finalites}
 
 Au fil de mes réflexions, j'ai pu petit à petit tracer les grandes lignes de ce que j'imaginais pour mon projet agricole, à travers une finalité pour point de mire et des objectifs pour y parvenir.
 
@@ -123,22 +124,22 @@ Créer une ferme en agroécologie, économiquement viable, automne et centrée s
 \hspace{1cm}
 
 \subsection{Objectifs}
+\label{part:objectifs}
 
 Pour parvenir à cette finalité, j'ai pu distinguer 4 principaux objectifs: agroécologique, économique, d'autonomie et de production. Ces objectifs détermineront ensuite les choix et les orientations prises par le projet, qui sera détaillé dans les parties suivantes.
 
 \subsubsection{Objectifs agroécologiques}
 
-En sus des enjeux climatiques et de pénuries des ressources fossiles, l'agriculture est confrontée à d'autres graves problèmes environnementaux, en particulier l'érosion des sols ou la perte de biodiversité, représentant des périls tout aussi impérieux. 
-Sans rentrer dans une définition complexe de l'agroécologie, je souhaite que mon projet s'axe sur des pratiques culturales durables, dont certaines seront présentées en détail dans la partie \ref{chap:cereales}. En voici les principaux objectifs :
+En sus des enjeux climatiques et de pénuries des ressources fossiles, l'agriculture est confrontée à d'autres graves problèmes environnementaux, en particulier l'érosion des sols ou la perte de biodiversité, représentant des périls tout aussi impérieux. Sans rentrer dans une définition complexe de l'agroécologie, je souhaite que mon projet s'axe sur des pratiques culturales durables, dont certaines seront présentées en détail dans le chapitre \ref{chap:cereales}. En voici les principaux objectifs :
 
 \hspace{1cm}
 \begin{itemize}
 
 	\item[$\clubsuit$] Produire sans intrants chimiques, c'est-à-dire en agriculture biologique ;
-	\item[$\clubsuit$] Minimiser sa consommation de produits pétroliers et les émissions de CO2 ;
+	\item[$\clubsuit$] Minimiser la consommation de produits pétroliers et les émissions de CO2 ;
 	\item[$\clubsuit$] Préserver et développer la vie du sol et la biodiversité ;
 	
-	\item[$\clubsuit$] Participer à la préservation des paysages.
+	\item[$\clubsuit$] Participer à la préservation des paysages, notamment avec la réhabilitation de haies.
 
 \end{itemize}
 \hspace{1cm}
@@ -150,7 +151,7 @@ Tout projet agricole, même ayant des pratiques agroécologiques, se doit d'atte
 \hspace{1cm}
 \begin{itemize}
 
-	\item[$\clubsuit$] Atteindre le revenu médian français pour les agriculteurs, soit environ 1 700\euro{}/mois ; 
+	\item[$\clubsuit$] Atteindre le revenu médian français, soit environ 1 700\euro{}/mois ; 
 	\item[$\clubsuit$] Être résilient, en pouvant affronter une perte de récolte ou une charge exeptionnelle ;
 	\item[$\clubsuit$] Limiter le temps de travail au plus à 50h en moyenne hebdomadaire.
 
@@ -161,7 +162,7 @@ Atteindre ces objectifs implique nécesairement d'\textbf{être très productif 
 
 \subsubsection{Objectif d'autonomie}
 
-Ce projet agricole s'inscrit dans une vision à long terme\footnote{Par exemple, la rotation des culture s'étend sur 8 ans. Visualiser "seulement" 4 cycles correspond à 32 ans !}, ce qui s'inscrit idéalement dans une démarche autonome. Par exemple, le rétablissement des haies ne trouve d'intérêt que si elles sont pérénnisées : dans ce cadre, la location de terrain est un risque. J'envisage donc une association pour l'achat des terrains, à travers une SCI par exemple, qui sera détaillée dans la partie \ref{part:SCI}. Cette autonomie peut se concrétiser à travers ces objectifs :
+Ce projet agricole s'inscrit dans une vision à long terme\footnote{Par exemple, la rotation des culture s'étend sur 8 ans. Visualiser "seulement" 4 cycles correspond à 32 ans !}, ce qui s'inscrit idéalement dans une démarche d'autonomie. Par exemple, le rétablissement des haies ne trouve d'intérêt que si elles sont pérénnisées : dans ce cadre, la location de terrain est un risque. J'envisage donc l'achat des terrains et du bâti, à travers une association en SCI par exemple, ce qui sera détaillée dans la partie \ref{part:SCI}. Cette autonomie peut se concrétiser à travers ces objectifs :
 
 \hspace{1cm}
 \begin{itemize}
@@ -173,17 +174,18 @@ Ce projet agricole s'inscrit dans une vision à long terme\footnote{Par exemple,
 \end{itemize}
 \hspace{1cm}
 
-Le dernier objectif s'appuie sur l'idée que le projet doit être généralisable : il doit donc être capable de produire tout ce dont il a besoin, c'est-à-dire d'être autonomne agronomiquement parlant.
+Le dernier objectif s'appuie sur l'idée que le projet doit être généralisable à grande échelle : il doit donc être capable de produire tout ce dont il a besoin, c'est-à-dire d'être agronomiquement autonomne.
 
 \subsubsection{Objectif de production}
 
-La ferme a pour objectif la production de céréale sà destination de farine et de pain. Ces productions doivent répondre aux objectifs suivants :
+La ferme a pour objectif la production de céréales à destination de farine et de pain. Ces productions doivent répondre aux objectifs suivants :
 
+\hspace{1cm}
 \begin{itemize}
 
 	\item[$\clubsuit$] Acquérir au minimum 18 hectares ;
 	\item[$\clubsuit$] Maîtriser la conduite des céréales ;
-	\item[$\clubsuit$] Valoriser le grain en farine.
+	\item[$\clubsuit$] Valoriser tout le grain en farine.
 
 \end{itemize}
 \hspace{1cm}
@@ -192,19 +194,27 @@ Ils permettent d'atteindre les objectifs précédents, notamment économiques : 
 
 \subsubsection{Expérimentation de pratiques agricoles}
 
-Certains objectifs peuvent être contradictoires entre eux, comme par exemple l'atteinte de la viabilité économique avec l'utilisation d'un tracteur et la réduction de la consommation de pétrole, ou encore la maîtrise de l'enherbement par le labour et la lutte contre l'érosion du sol. L'idée est de démarrer le projet avec les méthodes de production actuelles pour le rendre viable humainement et économiquement dans un premier temps.  Une fois les processus bien établis, où je pourrai sm'assurer un revenu et du temps disponible, je souhaiterai expérimenter de nouvelles méthodes agricoles, pour répondres aux contradictions citées précédemment : par exemple, imaginer un jour de la traction animale pour certaines tâches, ou du semis sous couvert ?
+Certains objectifs peuvent être contradictoires entre eux, comme par exemple la viabilité économique grâce à l'utilisation d'un tracteur et la réduction de la consommation de pétrole, ou encore la maîtrise de l'enherbement par le labour et la lutte contre l'érosion du sol. L'idée est de démarrer le projet avec les méthodes de production actuelles pour le rendre viable humainement et économiquement dans un premier temps.  Une fois les processus bien établis, où je pourrai m'assurer un revenu et du temps disponible, je souhaiterai expérimenter de nouvelles méthodes agricoles, pour répondres à ces contradictions : par exemple, imaginer un jour de la traction animale pour certaines tâches, ou du semis sous couvert ?
 
-\subsection{Réalisation}
+\subsection{Déroulement du projet}
 
-Entre l'écriture de ce rapport présentant mon projet et sa réalisation concrète, de nombreuses étapes restent encore à accomplir, pendant quelques années. Je me dois en priorité de trouver des potentiels
-Pour mener à bien ce projet agricole, il me faudra du temps pour trouver des potentiels co-acquéreurs pour le foncier
+Entre l'écriture de ce rapport présentant mon projet et la réalisation concrète, de nombreuses étapes restent encore à accomplir, pendant quelques années. Le déroulement de ce projet d'aujourd'hui jusqu'à l'accomplissement de sa finalité est présenté sur la figure \ref{fig:realisation}.
 
-Recherche association avec éleveur pour la recherche et l'achat de foncier 
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.6]{20200122_BPREA_schema_installation.pdf}
+	\caption{Diagramme schématique représentant les différentes étapes de mon projet.}
+	\label{fig:realisation}
+\end{center}
+\end{figure}
 
+La première étape à la suite de mon BPREA est le salariat durant 2 ans au GAEC d'Allicoud, une association de paysans-boulangers situés dans la périphérie de Grenoble. Ces deux années permettront de me former à la boulangerie traditionnelle au levain, où je n'ai pas de compétence aujourd'hui, tout en me permettant de rechercher activement des porteurs de projet en élevage avec qui m'associer pour la recherche de foncier\footnote{Cf partie \ref{part:SCI}}. Le démarrage du projet avec l'acquisition de foncier est idéalement prévu en 2022, avec une viabilité financière atteinte au courant de l'année 2023\footnote{Cf partie \ref{fig:renta}}.
 
-Pas peur de lâcher de la thune à l'investissement pour être le plus efficacee et produire le plus par UTH
+Mes revenus se baseront sur mon salaire durant la recherche de foncier, puis sur les indemnités pôle emploi au démarrage du projet, où je ne pourrais pas me dégager un revenu la première année. En parralèle, je compte enseigner en tant qu'examinateur en physique au lycée Champollion de Grenoble, ce qui m'apportera 2 000\euro{}/an. 
 
 \chapter{Commercialisation}
+
+Dans un projet agricole, la commercialisation est parfois considéré comme peu prioritaire ; c'est pourtant un aspect essentiel pour s'assurer des revenus à la hauteur de son travail, et qui peut nécessiter beaucoup de temps et d'engagement. Dans cette partie, nous nous intéressons à la gamme des produits proposés à la vente, les canaux de vente et la stratégie commerciale et marketing adoptée. 
 
 \section{Produits et gamme}
 
@@ -239,7 +249,7 @@ La gamme secondaire sera constituée de pains dits « spéciaux », à graines, 
 
 \end{itemize}
       
-Il est possible d’imaginer des pains plus complexes, qui pourraientt être réalisés une fois le processus de production des produits précédents bien maitrisé et rodé. Il pourrait y avoir par exemple :
+Il est possible d’imaginer des pains plus complexes, qui pourraient être réalisés une fois le processus de production des produits précédents bien maitrisé et rodé. Il pourrait y avoir par exemple :
 \begin{itemize}
 
 	\item[$\triangle$] \textbf{brioche}
@@ -269,7 +279,7 @@ Au-delà de la gamme de produits, le mode de commercialisation dépend de la cap
 
 \subsection{Zone de chalandise}
 
-La zone de chalandise pour mon projet est définie à partir de la zone accessible à 1h10 en voiture, en partant de la ferme. Celle-ci étant \textit{a priori} basée à Mens, j’ai pu définir cette zone à partir d’une isochrone de 1h10, que l’on peut voir sur la carte sur la figure \ref{fig:chalandise}. 
+La zone de chalandise pour mon projet est définie à partir de la zone accessible à 1h10 en voiture, en partant de la ferme. En imaginant que celle-ci était \textit{a priori} basée à Mens, au coeur du Trièves, j’ai pu définir cette zone à partir d’une isochrone de 1h10, que l’on peut voir sur la carte sur la figure \ref{fig:chalandise}. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -356,9 +366,9 @@ L'argumentaire commercial peut se baser sur différentes approches en lien avec 
 
 Pour mes produits, je choisis préférentiellement la vente en magasin bio, de producteur ou AMAP. L’activité commerciale n’est ni mon point fort ni ma passion, je souhaite donc réduire le temps dédié à la vente. 
 
-Les magasins bio et de producteurs "sous-traitent" cette partie contre une marge, mais le temps dédié est seulement celui de la livraison. La vente de pain et de farine est courante, c’est même un produit demandé, où la demande est plus forte que l’offre. L’avantage de ce canal de distribution est le gain de temps, il n’y a pas à tenir un stand une demie journée durant, il n’y a que la livraison à faire. 
+Les magasins bio et de producteurs sous-traitent la commercialisation contre une marge, le temps dédié est alors seulement celui de la livraison. La vente de pain et de farine est courante, c’est même un produit demandé, où la demande est plus forte que l’offre. L’avantage de ce canal de distribution est le gain de temps, il n’y a pas à tenir un stand une demie journée durant, il n’y a que la livraison à faire. 
 Avantage : le gain de temps. Il n’y a que la livraison à faire. La demande est forte, et il y a possibilité de ne faire que quelques tournées par semaine. Il est facile d’écouler la farine pour bien la valoriser. 
-Inconvénients : Le principal inconvénient est que ces structurent prennent une marge, qui peut être plus ou moins grande (20 \% magasin de producteur, 28 \% magasins bio). D’autre part, les magasins ne prennent qu’une quantité limitée, il faut donc prévoir potentiellement une grande tournée pour écouler la marchandise.
+Inconvénients : le principal est la marge que prennent ces structures, plus ou moins grande (20 \% magasin de producteur, 28 \% magasins bio). D’autre part, les magasins ne prennent qu’une quantité limitée, il faut donc prévoir potentiellement une grande tournée pour écouler la marchandise.
 
 Globalement, je préfère perdre une partie de la valeur ajoutée de mes produits plutôt que consacrer beaucoup de temps à la vente. Je préfère par ailleurs garder le temps économiser à la production ou pour élargir ma gamme. 
 
@@ -420,7 +430,11 @@ Les réseaux sociaux et le web opèrent un rôle majeur dans la communication, q
 \chapter{Culture des céréales}
 \label{chap:cereales}
 
+La culture des céréales est le propre du paysan-boulanger, c'est ce qui lui permet de vendre du pain sans être officiellement boulanger. Au coeur de son métier, elle lui permet d'avoir le contrôle total sur la fabrication de son produit, du choix des vériétés à la façon de conduire ses cultures. Entre la volonté de cultiver en agroécologie avec une rotation diversifiée et la nécessité de cultiver prioritairement des céréales, la casquette d'agriculteur du paysan-boulanger est un subtil équilibre entre l'écologie et l'économie. Je propose ici le système de culture qui me semble le plus adapté à mes besoins et mes convictions, en répondant aux objectifs définis en \ref{part:objectifs}.
+
 \section{Contraintes du système paysan-boulanger}
+
+Chaque système de production a ses contraintes propres pour répondre aux impératifs économiques ; le paysan-boulanger se distingue du système grandes cultures par une surface petite mais d'une dizaine d'hectares mécanisés au moins, avec un minimum de blé tendre dans sa rotation.
 
 \subsection{Place minimale des céréales dans la rotation}
 
@@ -434,25 +448,23 @@ La valorisation en pain permet de décupler le chiffre d'affaire à l'hectare\fo
 
 \subsection{Nécessité de la mécanisation}
 
-Dans un système grande culture, il est impossible d’intervenir manuellement ou ponctuellement sur les culture du fait de l’importante taille des parcelles, contrairement au maraîchage, où les interventions manuelles sont possibles. Il faut donc pouvoir gérer l’enherbement, la fertilisation ou l’impact des ravageurs à grande échelle, avec des outils mécanisés. Même sur \textbf{une quinzaine d'hectares, ce quiune surface reste modeste, cultivables nécessitent impérativement d'être mécanisés}, bien que ce soit une limite à l'approche agroécologique décrite plus haut. Dans notre système socio-économique, il est tout à fait inenvisageable, pour le moment, de se baser sur la traction animale. 
+Dans un système grande culture, il est impossible d’intervenir manuellement ou ponctuellement sur les culture du fait de l’importante taille des parcelles, contrairement au maraîchage, où les interventions manuelles sont possibles. Il faut donc pouvoir gérer l’enherbement, la fertilisation ou l’impact des ravageurs à grande échelle, avec des outils mécanisés. Même sur \textbf{une quinzaine d'hectares, ce qui est une surface reste modeste, cultivables nécessitent impérativement d'être mécanisés}, bien que ce soit une limite à l'approche agroécologique décrite plus haut. Dans notre système socio-économique, il est tout à fait inenvisageable, pour le moment, de se baser sur la traction animale. 
 
 Il y a deux possibilités : acheter le matériel adéquat ou externaliser ce travail en prestations. Dans le premier cas, \textbf{l'investissement est conséquent, de l'ordre de 40 à 50 000\euro{}} pour un tracteur de 90ch et les outils du sols d'occasion, mais permet de maitriser les cycles de production. C'est un choix intéressant économiquement par rapport à la prestation dans le cas d'une CUMA. \textbf{Le travail cultural réalisé en totalité en prestation revient peu ou prou à 400\euro{} par hectare}, soit 8000\euro{} de charges annuelles pour 20 hectares.
 
 \section{Choix et démarche}
 
-Agroécologie : durable, donc généralisable.
-Agroécologie la démarche doit être généralisable : il fau tune autosuffisance ou ce qui est produit à un endroit soit consommé à un autre et inversement.
-Ce sont des choix que je m'impose en plus des pratiques nécessaire à avoir en AB (cf la rotation plus bas) : rien ne 'moblige au couver tpermnent ou au minimum de labour.
+Un aspect essentiel à mon projet est le choix de travailler la terre en agroécologie. En grande culture, ce choix implique de suivre une démarche à la fois d'autonomie agronomique, en ne prenant à la terre que ce qu'elle peut nous donner, et à la fois de préservation de la vie du sol et de la biodiversité, essentiels à la bonne santé des cultures. Cependant, il faut regarder les choses telles qu'elles sont : cette démarche agroécologique à un coût direct réel, mais il faut l'envisager comme un investissement agronomique indispensable à long terme.
 
 \subsection{Autonomie agronomique}
 
-Pour une ferme suivant une démarche agroécologique, il faut pouvoir \textbf{réduire au strict minimum les intrants, en plus particulièrement ceux issus de ressources fossiles}. En effet, dnas cette démarche durable, il faut donc s'affranchir au possible de ces intrants non renouvelables, tels les produits pétroliers (carburants, plastiques, engrais et chimie de synthèse) mais aussi des engrais minéraux, comme le Patentkali$^\mathrm{\textregistered}$\footnote{Cet engrais minéral "\textit{est issu des dépôts naturels de sels en Europe, formés par l’évaporation de l’eau de mer il y a plusieurs millions d’années}" d'après le producteur. C'est donc une ressource non renouvelable.}. \textbf{D'autre part, sur les ressources renouvelables (fumier, paille, grain), le bilan global de la ferme doit être neutre}, c'est-à-dire qu'il doit sortir autant de ressources qu'il n'en rentre, afin d'assurer l'équilibre écologique. Il convient aussi de produire le maximum de ces ressources sur place, pour limiter leur transport entre deux fermes.
+Pour une ferme suivant une démarche agroécologique, il faut pouvoir \textbf{réduire au strict minimum les intrants, en plus particulièrement ceux issus de ressources fossiles}. En effet, dans cette démarche durable, il faut donc s'affranchir au possible de ces intrants non renouvelables, tels les produits pétroliers (carburants, plastiques, engrais et chimie de synthèse) mais aussi des engrais minéraux, comme le Patentkali$^\mathrm{\textregistered}$\footnote{Cet engrais minéral "\textit{est issu des dépôts naturels de sels en Europe, formés par l’évaporation de l’eau de mer il y a plusieurs millions d’années}" d'après le producteur. C'est donc une ressource non renouvelable.}. \textbf{D'autre part, sur les ressources renouvelables (fumier, paille, grain), le bilan global de la ferme doit être neutre}, c'est-à-dire qu'il doit sortir autant de ressources qu'il n'en rentre, afin d'assurer l'équilibre écologique. Il convient aussi de produire le maximum de ces ressources sur place, pour limiter leur transport entre deux fermes.
 
 \paragraph{Conséquences :} La chimie et les engrais de synthèse sont prohibés ; d'autre part l'usage du plastique est fortement restreint en grandes cultures. Les efforts doivent donc se concentrer sur la consommation de carburant, inévitable en grande culture, \textbf{en limitant au maximum les travaux du sol énergivores}, comme le labour. Et \textbf{d'un point de vue agronomique il faut aussi veiller à ce que les exportations (grain, foin, paille) compensent les apports de la vie du sol ou de fumier.}
 
 \subsection{Vie du sol et biodiversité}
 
-Les systèmes de grandes cultures conventionnels ont certes permis d'assurer une production croissante au cours de la seconde moitié du XX$^{\mathrm{i\grave{e}me}}$ siècle, mais cette croissance s'est basée sur une exploitation minière sur la qualité agronomique des sols\footnote{Les pratiques agricoles érodent les sols, jusqu'à des proportions inquiétantes dans le monde entier, y compris en France. Par exemple, le labour et des sols nus permettent aux intempéries de faiire ruisseler les particules de terre argileuse, qui ont mettent des dizaines de milliers d'années à se former, vers les fleuves, et \textit{in fine}, à l'océan.} et surtout grâce à l'utilisation massive d'engrais azotés, d'origine fossile\footnote{Les engrais azotés de synthèse, à l'orgine de l'explosion des rendements agricoles, sont produits grâce au procédé de Haber-Bosch, qui permet de fixer l'azote atmosphérique à partir du craquage du méthane, issus des gisements de pétrole ou de gaz naturel.}. Non durables, ces méthodes, associées à l'utilisation massive de pesticides, ne sont pas sans conséquences écologiques : contribution au réchauffmeent climatique, appauvrissement de la vie du sol, diminution du taux de matière organique dans les sols, effondrement de la biodiversité générale...
+Les systèmes de grandes cultures conventionnels ont certes permis d'assurer une production croissante au cours de la seconde moitié du XX$^{\mathrm{i\grave{e}me}}$ siècle, mais cette croissance s'est basée sur une exploitation minière sur la qualité agronomique des sols\footnote{Les pratiques agricoles érodent les sols, jusqu'à des proportions inquiétantes dans le monde entier, y compris en France. Par exemple, le labour et des sols nus permettent aux intempéries de faiire ruisseler les particules de terre argileuse, qui ont mettent des dizaines de milliers d'années à se former, vers les fleuves, et \textit{in fine}, à l'océan.} et surtout grâce à l'utilisation massive d'engrais azotés, d'origine fossile\footnote{Les engrais azotés de synthèse, à l'orgine de l'explosion des rendements agricoles, sont produits grâce au procédé de Haber-Bosch, qui permet de fixer l'azote atmosphérique à partir du craquage du méthane, issus des gisements de pétrole ou de gaz naturel.}. Non durables, ces méthodes, associées à l'utilisation massive de pesticides, ne sont pas sans conséquences écologiques : contribution au réchauffement climatique, appauvrissement de la vie du sol, diminution du taux de matière organique dans les sols, effondrement de la biodiversité générale...
 
 Pour être durable, \textbf{un système de grandes cultures doit entrer dans une démarche globale et nécessaire de préservation de l'environnement}, au prix, hélas, d'une diminution des rendements\footnote{Les rendements en AB de blé tendre dans la région Rhône-Alpes sont compris entre 25 et 35qx/ha. Pour comparaison, ils sont à 60 qx/ha en conventionnel dans la région, et à 40 qx/ha en moyenne en AB en Île-de-France. Source : \textit{Rotations pratiquées en grandes cultures biologiques en France : état des lieux par région, ITAB, 2011}}. Le nécessaire passage en agriculture biologique implique, du fait du cahier des charges, à favoriser une rotation diversifiée et à implanter des couverts d'interculture dès que le sol est à nu. Il est possible d'aller plus loin en limitant les exportations de pailles et de chaumes ou en rétablissant des haies naturelles entre les parcelles cultivées.
 
@@ -460,7 +472,7 @@ Pour être durable, \textbf{un système de grandes cultures doit entrer dans une
 
 Au-delà de ces intérêts purement agronomiques, il est aussi essentiel de \textbf{rétablir une certaine beauté dans le paysage}, avec des champs aux cultures variées, des bandes fleuries, des haies structurant le paysage et une présence de diversité animale et végétale.
 
-\paragraph{Conséquences :} En AB, comme l'utilisation des pesticides est interdite, préserver la vie du sol et la biodiversité implique principalement de \textbf{réduire le labour au strict minimum, c'est-à-dire ne le faire que lorsque l'enherbement devient incontrôlable}. Le labour, en retournant les horisons du sol, est particulièrement nocif pour tous les organismes du sol et favorise l'érosion. Il faut aussi pouvoir implanter un couvert végétal dès que le sol reste à nu plus de trois mois durant. Une autre possibilité est le rétablissement de haies entre au bord des parcelles. 
+\paragraph{Conséquences :} En AB, comme l'utilisation des pesticides est interdite, préserver la vie du sol et la biodiversité implique principalement de \textbf{réduire le labour au strict minimum, c'est-à-dire ne le faire que lorsque l'enherbement devient incontrôlable}. Le labour, en retournant les horizons du sol, est particulièrement nocif pour tous les organismes du sol et favorise l'érosion. Il faut aussi pouvoir implanter un couvert végétal dès que le sol reste à nu plus de trois mois durant. Une autre possibilité est le rétablissement de haies entre au bord des parcelles. 
 
 Il faut garder à l'esprit que ces différentes pratiques ont, à court terme, un coût direct (implantation ses couverts, diminution des rendements sans engrais azotés) et indirect (allongement de la rotation au profit de cultures moins rentables). Néanmoins, ces "coûts" ne le sont pas vraiment, car il s'agit plutôt de ne pas dilapider le capital naturel et de préserver une production à très long terme.
 
@@ -471,16 +483,16 @@ Les choix agroécologiques et les contraintes propres aux grandes cultures, déf
 
 \subsection{Importance de la rotation en grande culture}
 
-En grandes cultures biologiques, les deux contraintes forte en AB sont la fertilisation et la gestion de l'enherbement. La rotation des cultures permet de répondre à ces contraintes, déjà présente au Moyen-âge où l'on pratiquait déjà des rotations triennales, en alternant céréales, légumineuses et jachères. Conformes à cet esprit originel, celles pratiquées aujourd'hui sont plus élaborées, parfois jusqu'à 12 années successives. Les principaux critères d'une rotation sont :
+En grandes cultures biologiques, les deux contraintes fortes en AB sont la fertilisation et la gestion de l'enherbement. La rotation des cultures permet de répondre à ces contraintes, déjà présente au Moyen-âge où l'on pratiquait déjà des rotations triennales, en alternant céréales, légumineuses et jachères. Conformes à cet esprit originel, celles pratiquées aujourd'hui sont plus élaborées, parfois jusqu'à 12 années successives. Les principaux critères d'une rotation sont :
 \begin{itemize}
 
-	\item[$\clubsuit$] Alterner les familles botaniques permet de casser le cycles de ravageurs et de varier les besoins en fertilisation. Les cultures appartiennent le plus souvent aux poacées (ou graminées, ou encore céréales) et les fabacées (ou les légumineuses). 
+	\item[$\clubsuit$] L'alternance des familles botaniques, qui permet de casser le cycles de ravageurs et de varier les besoins en fertilisation. Les cultures appartiennent le plus souvent aux poacées (ou graminées, ou encore céréales) et les fabacées (ou les légumineuses). 
 
-	\item[$\clubsuit$] Alterner les cultures exigeantes (blé, maïs, colza) et les légumineuses (luzerne, soja, pois), qui en fixant l'azote atmosphérique, fertilise le sol. 
+	\item[$\clubsuit$] L'alternance les cultures exigeantes (blé, maïs, colza) et les légumineuses (luzerne, soja, pois), qui fertilisent le sol par fixation de l'azote atmosphérique. 
 	
-	\item[$\clubsuit$] Alterner les cultures de printemps et d'hiver permet de casser le cycle des adventices annuelles.
+	\item[$\clubsuit$] L'alternance les cultures de printemps et d'hiver, pour casser le cycle des adventices annuelles.
 	
-	\item[$\clubsuit$] Respecter les temps de non-retour, de trois ans pour l es légumineuses jusqu'à 6 ans pour les crucifères. Dans le cas des céréales, on évite de cultiver la même céréales d'une année sur l'autre : par exemple, la succession blé $\rightarrow$ seigle présente beaucoup moins de risque que blé $\rightarrow$ seigle.
+	\item[$\clubsuit$] Le respect des temps de non-retour des différentes cultures, de trois ans pour les légumineuses, jusqu'à 6 ans pour les crucifères. Dans le cas des céréales, présentes en quasi-permanence, on évite de cultiver la même céréale d'une année sur l'autre : par exemple, la succession blé $\rightarrow$ seigle présente moins de risque sanitaire que celle blé $\rightarrow$ blé.
 	
 	\item[$\clubsuit$] Une période de jachère sur deux ou trois ans en tête de rotation permet de contrôler l'enherbement, et donc les interventions mécaniques. Elle peut être constituée d'une prairie semée avec une légumineuse, comme de la luzerne ou du trèfle.
 
@@ -494,7 +506,7 @@ Le projet étant "théorique" dans le sens où je n'ai pas encore de foncier, je
 
 \subsubsection{Climat du Trièves}
 
-Le climat du Trièves subit les influences méditerranéennes et continentale, avec un climat semi-montagnard. Il se caractérise donc par des hivers froids et humides et un été plus chaud et sec. Par ailleurs, il se situe au nord de la limite climatique séparant les Alpes du Nord et la Provence\footnote{Le contraste des paysages de part et d'autre le col de la Croix Haute est saisissant ; au sud les paysages sont déjà provençaux, au nord, ils ressemblent déjà à ceux des Alpes septentrionales.} ; le climat est plus sec et doux en comparaison des massifs situé plus au nord de Grenoble, illustré par le diagramme climatique de la figure \ref{fig:climat}.
+Le climat du Trièves subit les influences méditerranéennes et continentales, avec un climat semi-montagnard. Il se caractérise donc par des hivers froids et humides et un été plus chaud et sec. Par ailleurs, il se situe au nord de la limite climatique séparant les Alpes du Nord et la Provence\footnote{Le contraste des paysages de part et d'autre le col de la Croix Haute est saisissant ; au sud les paysages sont déjà provençaux, au nord, ils ressemblent déjà à ceux des Alpes septentrionales.} ; le climat est plus sec et doux en comparaison des massifs situé plus au nord de Grenoble, illustré par le diagramme climatique de la figure \ref{fig:climat}.
 
 \begin{figure}[h!]
 \begin{center}
@@ -505,6 +517,12 @@ Le climat du Trièves subit les influences méditerranéennes et continentale, a
 \end{figure}
 
 Les précipiation annuelles sont de 977mm et la température moyenne de 8,3$^\circ$C, avec un mois de juillet particulièrement sec. Ce climat est tout à fait compatible avec la culture du blé, qui a besoin d'un hiver froid pour sa vernalisation et un début d'été sec pour sa maturation. Les précipitations sont largement suffisantes pour les besoins des céréales.
+
+\subsubsection{Adaptation au changement climatique}
+
+L'adaption au changement climatique est un défi aussi indispensable que risqué. Indispensable, car l'augmentation des température est un fait avéré, et les projections sont globalement pessimistes quant aux conséquences. Risqué, car il est impossible de connaître à l'avance ces conséquences précisément sur une échelle spatio-temporelle. Néanmoins, on peut en tirer quelques conclusions sur la région Rhône-Alpes\footnote{MétéoFrance propose gratuitement sur site l'évolution actuelle et les projections du climat par région en France : \url{http://www.meteofrance.fr/climat-passe-et-futur/climathd}} : un climat potentiellement plus chaud de 4$^\circ$ d'ici à 2070. Malgré des précipitations peu changées, la chaleur induit un risque important d'assèchement des sols néfaste à la végétation et des précipitations concentrées durant l'hiver. 
+
+Ces conclusions ont orienté mon choix de projet : le blé nécessite des apports en eau durant l'hiver et au printemps, moins l'été, même si les autres cultures (légumineuse d'été, luzerne, sarrasin) risque de souffrir. D'autre part, il serait intéressant d'opter pour une installation en altitude : si ce choix n'est pas optimal pour les céréales à l'heure actuelle, le réchauffement pourra être "compensé" par l'altitude\footnote{On observe déjà une migration vers les pôles et des zones plus élevées en altitude avec certaines espèces naturelles.} : il fera moins chaud, et les précipitations sont plus suceptibles de s'y produire (par effet Foen). Gardons à l'esprit que le changement majeur du climat risque de bouleverser la biodiversité en général, et poser des difficultés supplémentaires.
 
 \subsection{Rotation choisie}
 
@@ -527,7 +545,7 @@ Cette rotation est relativement "classique" en grandes cultures bio, avec un cho
 \begin{figure}[h!]
 \begin{center}
 	\includegraphics[scale=0.35]{rotation_projet_cercle.pdf}
-	\caption{Parcelle de blé, fin novembre. Le blé a levé, mais on voit de nettes traces d'érosion et de tassement suite à un semis dans des conditions difficiles : terrain mal ressuyé et en pente.}
+	\caption{Rotation envisagée, sur 8 ans.}
 	\label{fig:rot_cercle}
 \end{center}
 \end{figure}
@@ -537,7 +555,7 @@ Cette rotation est relativement "classique" en grandes cultures bio, avec un cho
 
 \subsubsection{Années 1$\rightarrow$3 : Prairie semée (luzerne et graminées)}
 
-\paragraph{$\circ$ Rôle} La tête de rotation est une prairie semée composée principalement de luzerne et de graminées (fétuque, ray-grass; dactyle). La luzerne enrichit en azote le sol, le structure et nettoie le champ des vivaces. Une durée trois ans assure un nettoyage efficace, mais ne peut être prolongé au-delà : les pieds de luzerne se fatiguent et prend une trop grande proportion dans la rotation. Les graminées, en plus petite proportion, permettent de diversifier l'exploration racinaire du sol et favorise une valorisation directe en fourrage pour de l'élevage. On prend des espèces qui ne sont pas utilisées dans le reste de rotation pour éviter les maladies.
+\paragraph{$\circ$ Rôle} La tête de rotation est une prairie semée composée principalement de luzerne et de graminées (fétuque, ray-grass; dactyle). La luzerne enrichit en azote le sol, le structure et nettoie le champ des vivaces. Une durée trois ans assure un nettoyage efficace, mais ne peut être prolongé au-delà : les pieds de luzerne se fatiguent et la luzerne occupe une trop grande proportion dans la rotation. Les graminées, en plus petite proportion, permettent de diversifier l'exploration racinaire du sol et favorisent une valorisation directe en fourrage pour de l'élevage. On prend des espèces qui ne sont pas utilisées dans le reste de rotation pour éviter les maladies.
 
 \begin{figure}[h!]
 \begin{center}
@@ -545,7 +563,7 @@ Cette rotation est relativement "classique" en grandes cultures bio, avec un cho
 \end{center}
 \end{figure}
 
-\paragraph{$\circ$ Conduite} Après le déchaumage du sarrasin restant, on réalise au pirntemps un faux semis permettant de préparer le sol pour le semis, qui se fait à une dose de 20kg/ha pour la luzerne et 8kg/ha pour les graminées. Les deux premières années de prairie seront pourront être utilisées pour du fourrage, soit par coupe, soit en faisant paître des bêtes directement dessus. L'exportation de et d'éléments minéraux sera en partie composée par du fumier ajouté. La dernière année, la prairie sera simplement broyée, d'une part pour limiter les exportations de MO, d'autre part pour favoriser sa minéralisation avant la culture du blé suivante. La prairie est détruite par un labour à la mi-septembre de la troisième année.
+\paragraph{$\circ$ Conduite} Après le déchaumage du sarrasin précédent, on réalise au pirntemps un faux semis permettant de préparer le sol pour le semis, qui se fait à une dose de 20kg/ha pour la luzerne et 8kg/ha pour les graminées. Les deux premières années de prairie seront pourront être utilisées pour du fourrage, soit par coupe, soit en faisant paître des bêtes directement dessus. L'exportation d'éléments minéraux sera en partie composée par du fumier ajouté. La dernière année, la prairie sera simplement broyée, d'une part pour limiter les exportations de MO, d'autre part pour favoriser sa minéralisation avant la culture du blé suivante. La prairie est détruite par un labour à la mi-septembre de la troisième année.
 
 \paragraph{$\circ$ Valorisation} Principalement agronomique, pour reposer le sol et le recharger en azote. La production de fourage est estimée à 10t de matière sèche par hectare pour 2 années sur 3, qui peut être vendue en fourrage à 50\euro{}/t. Les débouchés pour l'élevage en région grenobloise ne sont a priori pas un problème. 
 
@@ -559,7 +577,7 @@ Cette rotation est relativement "classique" en grandes cultures bio, avec un cho
 \end{center}
 \end{figure}
 
-\paragraph{$\circ$ Variétés} On prendra pour moitié des semences commerciales (Energo) et paysannes (Rouge de bordeaux et Florence Aurore). Les semences commerciales assurent un certain rendement et permettent d'éviter les problème de verse par leur hauteur de taille limitée. Les semences paysannes, quant à elles, sont plus incertaines en rendement et on risque avéré de verse, mais leur diversité génétique assurent aussi une certaine résistance face aux ravageurs. Le mélange de ces deux types de semences permet de moyenner les avantages et les inconvénients. 
+\paragraph{$\circ$ Variétés} On prendra pour moitié des semences commerciales (Energo) et paysannes (Rouge de bordeaux et Florence Aurore). Les semences commerciales assurent un certain rendement et permettent d'éviter les problème de verse par leur hauteur de paille limitée. Les semences paysannes, quant à elles, sont plus incertaines en rendement et on risque avéré de verse, mais leur diversité génétique assurent aussi une certaine résistance face aux ravageurs. Le mélange de ces deux types de semences permet de moyenner les avantages et les inconvénients. 
 
 \paragraph{$\circ$ Conduite} On réalise un ou plusieurs faux semis de début octobre en passant la bineuse rapidement dans le champ, de préférence avant une pluie, pour favoriser la levée des adventices. Le faux-semis permet aussi de préparer le sol pour le semis, réalisé début novembre, à une dose de 200kg/ha. La herse étrille est passée une ou deux fois au printemps, pour réchauffer et réoxygéner le sol, et détruire les pousses d'adventices. Le blé est récolté courant juillet en prestation, estimée à 120\euro{}/ha. 
 
@@ -597,9 +615,9 @@ Cette rotation est relativement "classique" en grandes cultures bio, avec un cho
 
 \subsubsection{Années 8 : Sarrasin}
 
-\paragraph{$\circ$ Rôle} Culture de fin de rotation, qui n'est pas exigeante, nettoyante, rustique. Elle permet de valoriser les reliquats d'azote et de fourniture en matière organique en toute fin de rotation. De la famille des \textit{hydrophylacées}, le sarrasin permet d'ajouter une culture autre que les céréales et les légumineuses dans la rotation. C'est une culture très nettoyante, permettant de limiter l'enherbement en fin de rotation. Ne supportant pas la moindre gelée, il est donc semé tard, au plus tôt à la fin avril.
+\paragraph{$\circ$ Rôle} Culture de fin de rotation, qui n'est pas exigeante, nettoyante, rustique. Elle permet de valoriser les reliquats d'azote et de fourniture en matière organique en toute fin de rotation. De la famille des \textit{polygonacées}, le sarrasin permet d'ajouter une culture autre que les céréales et les légumineuses dans la rotation. C'est une culture très nettoyante, permettant de limiter l'enherbement en fin de rotation. Ne supportant pas la moindre gelée, il est donc semé tard, au plus tôt à la fin avril.
 
-\paragraph{Variétés} Acheté la 1$^{\mathrm{\grave{e}re}}$ année, puis ré-ensemençage avec les semences récolotées. Au vu des contraintes de la ferme et des conditions climatiques, il serait intéressant d'essayer la variété \textit{Petit Gris}. C'est la variété la plus utilisée en France avec \textit{La Harpe}, en Bretagne principalement ; il est donc aisé de trouver un revendeur. D'autre part, c'est l'une de variété les plus productives et qui est totalement adaptée à la production de farine, qui est notre débouché principal (pour la vente en direct etla transformation en pain). Il est aussi reconnu pour ses qualités gustatives. Son cycle n'est ni tardif, ni précoce, de 100 à 120 jours. Il peut s'insérer dans la rotation s'il n'est pas semé trop tard (fin avril), pour pouvoir implanter la prairie semée mi-octobre.
+\paragraph{Variétés} Acheté la 1$^{\mathrm{\grave{e}re}}$ année, puis ré-ensemençage avec les semences récolotées. Au vu des contraintes de la ferme et des conditions climatiques, il serait intéressant d'essayer la variété \textit{Petit Gris}. C'est la variété la plus utilisée en France avec \textit{La Harpe}, en Bretagne principalement ; il est donc aisé de trouver un revendeur. D'autre part, c'est l'une de variété les plus productives et qui est totalement adaptée à la production de farine, qui est notre débouché principal (pour la vente en direct et la transformation en pain). Il est aussi reconnu pour ses qualités gustatives. Son cycle n'est ni tardif, ni précoce, de 100 à 120 jours. Il peut s'insérer dans la rotation s'il n'est pas semé trop tard (fin avril), pour pouvoir implanter la prairie semée mi-octobre.
 
 \begin{figure}[h!]
 \begin{center}
@@ -607,7 +625,7 @@ Cette rotation est relativement "classique" en grandes cultures bio, avec un cho
 \end{center}
 \end{figure}
 
-\paragraph{$\circ$ Conduite} Le sarrasin est implanté après une interculture de moutarde et de tournesol, qui seront affaiblis par l'hiver et déchaumés d'ébut mars, en fonction des conditions climatiques\footnote{Ou même en début d'hiver s'il y a un risque de montée en graine pour la moutarde.}. Le semis étant tardif, au début du mois de mai, le sarrasin peut être concurrencé par les adventices en début de cycle : deux faux-semis seront réalisés durant le printemps avant le semis. Rien n'est fait jusqu'à la récolte, réalisée lorsque 3/4 des grains sont mûrs\footnote{Contrairement aux autres cultures, la floraison du sarrasin est indéterminée et les grains ne sont pas mûrs au même moment.}, à partir de mi-septembre. Il est déchaumé 
+\paragraph{$\circ$ Conduite} Le sarrasin est implanté après une interculture de moutarde et de tournesol, qui seront affaiblis par l'hiver et déchaumés début mars, en fonction des conditions climatiques\footnote{Ou même en début d'hiver s'il y a un risque de montée en graine pour la moutarde.}. Le semis étant tardif, au début du mois de mai, le sarrasin peut être concurrencé par les adventices en début de cycle : deux faux-semis seront réalisés durant le printemps avant le semis. Rien n'est fait jusqu'à la récolte, réalisée lorsque 3/4 des grains sont mûrs\footnote{Contrairement aux autres cultures, la floraison du sarrasin est indéterminée et les grains ne sont pas mûrs au même moment.}, à partir de mi-septembre, et ensuite déchaumé.
 
 \paragraph{$\circ$ Valorisation} Meunerie pour produire la farine vendue en direct et transformation en pain. Attention, les rendements sont très dépendants des conditions météorologiques au moment de la floraison, donc très variables. La floraison est par ailleurs très intense, il peut être possible de faire installer des ruches.
 
@@ -627,14 +645,14 @@ Le second couvert est à la septième année :
 \begin{align*}
 \left\langle \right. \mathrm{bl\acute{e}}  \left\rangle \right._{N+7}  \longrightarrow \left\langle \right.\mathrm{Moutarde,\ Tournesol}\left\rangle \right.\longrightarrow \left\langle \right. \mathrm{Sarrasin} \left\rangle \right. _{N+8}
 \end{align*}
-La moutarde (brassicacée) et le tournesol (astéracée) sont des familles absente de la rotation, elles cassent les cycles présents. La moutarde se dévellope très rapidement et est nettoyante. Le tournesol se déveloope rapidement, mais en hauteur. Sa racine pivotante est très intéressante pour la structuration du sol.
+La moutarde (brassicacée) et le tournesol (astéracée) sont des familles absentes de la rotation, elles cassent les cycles présents. La moutarde se développe très rapidement et est nettoyante. Le tournesol se développe rapidement, mais en hauteur. Sa racine pivotante est très intéressante pour la structuration du sol.
 
 \textit{Remarque} : on aurait pu choisir d'implanter une légumineuse afin d'apporter de l'azote supplémentaire dans la rotation. Cependant, le premier couvert étant avant une légumineuse, on évite une succession trop impotante de cette famille. D'autre part, le second couvert est avant un sarrasin, auquel on souhaite éviter un apport trop riche en azote.
 
 \section{Travaux du sol : coûts et temps de travail}
 \label{part:W_sol}
 
-Combien de temps, de carburant et d'argent faut-il pour travailler mécaniquement une parcelle ? Bien que la réponse dépende du matériel utilisé et des conditions pédo-climatiques, il existe des valeurs indicatives en grandes cultures, qui sont rapportées dans le tableau \ref{tab:W_sol1}. On considère que la moisson, qui nécessite un matériel particulier, est toalement sous traitée. De la même façon, les coupes de prairie semée sont sous-traitées.
+Combien de temps, de carburant et d'argent faut-il pour travailler mécaniquement une parcelle ? Bien que la réponse dépende du matériel utilisé et des conditions pédo-climatiques, il existe des valeurs indicatives en grandes cultures, qui sont rapportées dans le tableau \ref{tab:W_sol1}. On considère que la moisson, qui nécessite un matériel particulier, est totalement sous traitée. De la même façon, les coupes de prairie semée le sont aussi.
 
 \begin{figure}[h!]
 \center
@@ -679,77 +697,38 @@ La première colonne, "Coût / ha (\euro{}/ha)", comprend l'ensemble des charges
 
 Avec à peine 60h de travaux de culture, le temps de travail reste très limité. Ce n'est pas surprenant pour 20ha avec la moisson et les coupes qui sont sous-traitées. Si le coût de la prestation semble réaliste, il faut néanmoins relativiser le coût total de 5300\euro{}, qui part de l'hyothèse d'une utilisation intensive du tracteur. Ces coûts seront rediscutés au chapitre \ref{part:chap_eco}.
 
-\subsubsection{Mécanisation}
+\subsubsection{Autres coûts de la mécanisation}
 
-L'ensemble de l'outillage mécanique est estimé à 50 000\euro{}, avec un amortissement sur 12 ans, soit 4167\euro{} par an.
+L'ensemble de l'outillage mécanique est estimé à 50 000\euro{}, avec un amortissement sur 12 ans, soit 4167\euro{} par an. On considère que l'entretien et la reparation de ce matériel est de 5\euro{} de l'heure. Il comprend les pneus, l'huile et la réparation des outils. C'est une valeur haute : pour une utilisation de 600h/an, pour un tracteur de 90 ch, il s'établit à 3,3\euro{}/h\footnote{\textit{Coûts des Opérations Culturales 2018 des Matériels Agricoles}, Chambres d'agriculture de France.}. Comme le tracteur est beaucoup moins utilisé (moins de 100h/an), le coût horaire peut augmenter (si par exemple il faut faire la vidange toutes les 400h ou les 2 ans). On se calque donc sur une valeur surestimée. Le carburant, le gazole non routier (GNR), est pris à 0,85\euro{}/l\footnote{Il s'établissait à 0,85\euro{}/l. Les prix des carburants pétroliers étant très variables, on prend la valeur haute.}. Les prestations incluent les coupes et les récoltes, qui représentent 3000\euro{}.
 
-On considère que l'entretien et la reparation de ce matériel est de 5\euro{} de l'heure. Il comprend les pneus, l'huile et la réparation des outils. C'est une valeur haute : pour une utilisation de 600h/an, pour un tracteur de 90 ch, il s'établit à 3,3\euro{}/h\footnote{\textit{Coûts des Opérations Culturales 2018 des Matériels Agricoles}, Chambres d'agriculture de France.}. Comme le tracteur est beaucoup moins utilisé (moins de 100h/an), le coût horaire peut augmenter (si par exemple il faut faire la vidange toutes les 400h ou les 2 ans). On se calque donc sur une valeur surestimée.
+\subsection{Processus de production global de la ferme}
 
-Le carburant, le gazole non routier (GNR), est pris à 0,85\euro{}/l\footnote{Il s'établissait à 0,85\euro{}/l. Les prix des carburants pétroliers étant très variables, on prend la valeur haute.}. On arrive donc à un coût de 670\euro{}.
+Pour réaliser l'analyse économique de la ferme, \textbf{il faut avoir une vue globale sur l'ensemble de ses productions, qui feront son chiffre d'affaire, mais aussi des intrants nécessaires à cette production, pour estimer les charges}. La rotation définie précédemment en \ref{part:rot_detail} permet de déterminer l'ensemble des intrants nécessaires et des productions. 
 
-Les prestations incluent les coupes et les récoltes, qui représentent 3000\euro{}.
+\subsubsection{Rendements}
 
-\chapter{Meunerie et boulangerie}
+Les rendements retenus pour les différentes cultures sont estimés dans le tableau ci-dessous. Ce sont des valeurs pessimistes, c'est-à-dire qu'elle sont dans la moyenne basse des productions dans la région en AB.
+ 
+\begin{figure}[h!]
+\footnotesize
+\center
+\begin{tabular}{ | p{3cm} | p{4cm}|}
+\hline
+	\textbf{Culture} & \textbf{Rendement espéré (qx/ha)} \  \\ \hline
+	Blé & 25 \\ \hline
+	Seigle & 25 \\ \hline
+	Engrain & 15 \\ \hline
+	Sarrasin & 10 \\ \hline
+	Soja & 20 \\ \hline
+	Prairie & 100 \\ \hline
+\end{tabular}
+\end{figure}
 
-\section{Stockage du grain}
+Les valeurs de rendements sont données en quitaux par hectare, et correspondent à la quantité de grain produite, sauf pour la prairie semée ou on parle de matière sèche de fourrage.
 
-\subsection{Céréales}
+\subsubsection{Production globale et consomations d'intrants}
 
-\subsection{Cas du sarrasin}
-
-\section{Meunerie}
-
-Matériel nécessaire : un moulin astrié. Comme difificle à trouver d'occasion, achat en neuf. ça permet de s'assurer de la fiabilité, c'est un rouage essentiel dans le fonctionnement de la ferme.
-
-\section{Boulangerie}
-
-\subsection{Technique de fabrication}
-
-Tradition levain, repos du pain, four à bois.
-
-\subsection{Aménagement}
-
-Travaux pour isoler et contrôler la température et l'humidité. 
-
-\subsection{Matériel nécessaire}
-
-Essentiel : 
-Pétrin mécanique : diminue grandement le temps de travail et la fatigue physique
-Four à bois grande capacité 200kg. Cher à l'investissmeent mais permet d'économiser sur l'énergie et de réaliser des fournées d'un bloc.
-
-\subsection{Organisation}
-
-2 fournées de 150kg pour 8h de travail chacune. Réalisées le soir tard ou le matin tôt
-
-\chapter{Analyse économique}
-\label{part:chap_eco}
-
-La partie précédente a agronomique a permis de voir la conduite des culture pour assurer à la ferme une production viable agronomiquement parlant. L'analyse économique sert à savoir si le projet est viable financièrement.
-
-\section{Processus de production global de la ferme}
-
-Pour réaliser l'analyse économique de la ferme, \textbf{il faut avoir une vue globale sur l'ensemble de ses productions, qui feront son chiffre d'affaire, mais aussi des intrants nécessaires à cette production, pour estimer les charges}. Un système paysan-boulanger est plus complexe que les grandes cultures, car il y a trois processus de production : la culture des céréales, la meunerie et la boulangerie. Les schémas présentés dans la suite permettent de comprendre les différentes sources de revenus et les postes de charges spécifiques à chaque production.
-
-\subsection{Culture des céréales}
-
-La conduite des céréales a été présentée au chapitre \ref{chap:cereales}. Il est résumé, dans une vision comptable dans la figure \ref{fig:flux_champ}. 
-
-Pour produire, le champ "reçoit" des semences commerciales (prairie semée, soja, blé, et couverts d'interculture) ainsi que du travail mécanique, consommant 670L de GNR (ou l'équivalent de 7600\euro{} de travail en prestation).
-
-
-Chaque année, une partie de la production de grain est réutilisée en semence (paysanne). Finalement, une fois déduite les besoins en semences, la production de grain s'élève à :
-\begin{itemize}
-
-\item[$\diamondsuit$] 114 qx de blé tendre, sur 4,75ha ; 
-\item[$\diamondsuit$] 17,63 qx de seigle, sur 0,75ha ; 
-\item[$\diamondsuit$] 27,6 qx d'engrain, sur 2 ha ; 
-\item[$\diamondsuit$] 24,1 qx de sarrasin sur 2,5ha ; 
-\item[$\diamondsuit$] 50 qx de soja sur 2,5ha.
-
-\end{itemize}
-En grain, seul le soja est vendu directement en coopérative, au cours de 700\euro{} la tonne ; le reste est sotcké en silo avant de rejoindre la meunerie.
-
-Le fourrage est exporte deux année sur trois, soit 500 quitaux de matière sèches. Le reste est laissé sur place pour apporter de la matière organique au sol.
+L'ensemble des flux physiques nécessaire pour la conduite des cultures est résumé dans la vision comptable de la figure \ref{fig:flux_champ}. 
 
 \begin{figure}[h!]
 \begin{center}
@@ -759,9 +738,77 @@ Le fourrage est exporte deux année sur trois, soit 500 quitaux de matière sèc
 \end{center}
 \end{figure}
 
-\subsection{Meunerie}
+Pour produire, le champ "reçoit" des semences commerciales (prairie semée, soja, blé, et couverts d'interculture) ainsi que du travail mécanique, consommant 670L de GNR (ou l'équivalent de 7600\euro{} de travail en prestation). Chaque année, une partie de la production de grain est réutilisée en semence (paysanne). Finalement, une fois déduite les besoins en semences, la production de grain s'élève à :
+\begin{itemize}
+
+\item[$\diamondsuit$] 114 qx de blé tendre, sur 4,75ha ; 
+\item[$\diamondsuit$] 17,63 qx de seigle, sur 0,75ha ; 
+\item[$\diamondsuit$] 27,6 qx d'engrain, sur 2 ha ; 
+\item[$\diamondsuit$] 24,1 qx de sarrasin sur 2,5ha ; 
+\item[$\diamondsuit$] 50 qx de soja sur 2,5ha.
+
+\end{itemize}
+En grain, seul le soja est vendu directement en coopérative, au cours de 700\euro{} la tonne ; le reste est sotcké en silo avant de rejoindre la meunerie. Le fourrage est exporté deux années sur trois, soit 500 quintaux de matières sèches. Le reste est laissé sur place pour apporter de la matière organique au sol.
+
+\chapter{Meunerie et boulangerie}
+\label{chap:meunerie_boul}
+
+On dit parfois qu'un paysan-boulanger exerce trois métiers : celui de paysan, de meunier et de boulanger. Si la réussite des cultures est primoridale, les étapes de stockage du grain, de meunerie et de boulangerie le sont tout autant pour produire un pain de qualité.
+
+\section{Stockage du grain}
+
+Les céréales ont l'avantage de pouvoir se stocker sur une année entière, avec des moyens relativement modestes, contrairement à de nombreuses autres productions agricoles. Quelques aménagements et précautions sont cependant à prendre.
+
+\subsection{Céréales}
+
+Les grains de céréale (blé, seigle et engrain) seront stockés dans des silos métalliques, équipés de trémie à vis sans fin pour récupérer le grain. Il faudra prévoir des silos dimensionnés pour chaque production. Il est possible d'autoconstruire les silos assez facilement, mais les prix sont relativement abordables en occasion : il faut compter 1000\euro{} pour un silo de 200 quintaux avec sa trémie.
+
+Lors de la conception ou l'achat du silo, il faudra être vigilant au compostage du grain et le charançon :
+
+\begin{itemize}
+
+	\item[-] \textbf{le compostage du grain}. Comme toute graine, le grain de blé consomme légèrement d'oxygène et de ses réserves pour se maintenir son potentiel de germination. Cette "combustion" exothermique peut entrainer un échauffement important dans le silo où les grains sont confinés les uns sur les autres ; la réaction s'emballe et le grain se composte. Pour éviter cela, on ventile régulièrement, de préférence la nuit où lors des journées fraîches, pour maintenir la température à une valeur normale\footnote{Par ailleurs, pour limiter l'échauffement, on peut s'assurer de la "propreté" de sa parcelle : limiter les adventices limite la présence de graines non mûres, "vertes" dans le grain, et qui se compostent d'elles mêmes rapidement. On peut aussi trier le grain après moisson pour limiter leur présence.}.
+	
+	\item[-] \textbf{le charançon du blé : \textit{Sitophilus granarius}}. C'est un petit coléoptère qui s'alimente de la farine des grains de blé dont la prolifération peut provoquer d'énormes de dégâts dans les silos. Comme le charançon cesse de se développer aux températures inférieures à 12$^\circ$, et meurt s'il est exposé à une température de moins de 5$^\circ$ sur plusieurs mois, une ventilation régulière dès les premiers froids permet de se débarrasser des larves et des adultes (mais pas des œufs). Un passage au chalumeau dans les interstices du silo pour détruire à la chaleur les œufs, d'où l'intérêt de prévoir des silos métalliques. 
+	
+\end{itemize}
+
+Dans ces deux cas, la solution est d'aérer le grain pour le maintenir en dessous d'une certaine température. Des ventilateurs sont pourvus en bas de chaque silo de manière étanche, pour faire circuler efficacement de l'air à travers. 
+
+\subsection{Cas du sarrasin}
+
+Par rapport aux céréales, le sarrasin a une floraison indéterminée : les grains ne sont pas tous mûrs lors de la récolte, ce qui présente un risque de compostage pour les grains encore verts. \textbf{Juste après la récolte, il faut impérativement sécher le grain de sarrasin pour abaisser son taux d'humidité de 16 à 12\%, sous risque de composter le grain en quelques jours.} Il existe plusieurs technique de séchage. Dans notre cas, on peut soit sous-traiter le séchage (s'il existe des prestataires) pour environ 30-60\euro{}/t\footnote{\url{https://www.paysan-breton.fr/2017/10/ble-noir-la-tradition-a-du-bon/}}, soit utiliser le système de ventilation des silos déjà à disposition dans la ferme. Pour sécher le sarrasin, il est possible de le stocker dans un silo, et faire tourner la ventilation plusieurs jours durant, avec un système de chauffage électrique ou à gaz pour augmenter la température de ventilation (qui ne doit pas dépasser 40$^\circ$C).
+
+\section{Meunerie}
+
+La meunerie est le processus de transformation des céréales en farine ; c'est une étape importante qui détermine la qualité du produit fini.
+
+\subsection{Moulin}
+
+La qualité du pain, et en amont celle de la farine, est un des aspects qui permettent aux paysans-boulangers de se distinguer des artisans-boulangers. La mouture est la plupart du temps réalisée à l'aide du meule de pierre de type Astrié (figure \ref{fig:moulin}), qui écrase le grain de sorte à extraire aussi bien le gluten et l'amidon, ainsi que les protéines et le germe. En comparaison, la mouture classique, par laminage cylindrique, permettant d'obtenir la farine blanche ne conserve que l'amidon et le gluten ; on perd une grande partie des éléments nutritifs du blé. La farine obtenue est donc plus nutritive et plus digeste.
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.3]{moulin.jpg}
+	\caption{Moulin de type Astrié. La meule est visible à travers la protection en plexiglass.}
+	\label{fig:moulin}
+\end{center}
+\end{figure}
+
+Un moulin Astrié représente cependant un investissement conséquent : environ 10 000\euro{} pour une capacité de 15kg/h. Du fait de sa rareté sur le marché d'occasion et la nécessité d'un entretien impeccable, il est plus simple de l'acheter neuf. L'entretien se fait par aiguisage des meules tous les 5 ans, pour environ 300\euro{}.
+
+\subsection{Rendement et production de farine}
 
 L'ensemble des grains, sauf le soja, sont moulus pour être valorisé en farine, puis, en partie, en pain. Le rendement en farine\footnote{C'est le rapport entre la masse de farine obtenue et la masse de graine moulue.} est variable selon le type de grain : le meilleur rendement est celui du blé, le plus faible est celui du petit épeautre, qu'il faut décortiqué avant de moudre. Dans l'estiamtion du rendement, on a pris en compte les 2\% de perte.
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.7]{flux_physique_moulin.pdf}
+	\caption{Description des flux physiques nécessaire à la bonne production des cultures. Les intrants sont les semences et le carburant pour le tracteur (ou la prestation pour réaliser les différentes tâches).}
+	\label{fig:flux_moulin}
+\end{center}
+\end{figure}
+
 
 La production totale de farine s'élève à :
 \begin{itemize}
@@ -773,23 +820,35 @@ La production totale de farine s'élève à :
 
 \end{itemize}
 
-\begin{figure}[h!]
-\begin{center}
-	\includegraphics[scale=0.7]{flux_physique_moulin.pdf}
-	\caption{Description des flux physiques nécessaire à la bonne production des cultures. Les intrants sont les semences et le carburant pour le tracteur (ou la prestation pour réaliser les différentes tâches).}
-	\label{fig:flux_moulin}
-\end{center}
-\end{figure}
-
 Au débit de 15kg de grain moulu par heure, il faut au total 1200h environ à l'année pour moudre l'ensemble du grain, soit en moyenne 3h20min par jour. Le moulin consomme alors 1 200kWh d'électricité. Le grain est moulu au fur et à mesure de la fabrication du pain. 
 
-\subsection{Boulangerie}
+\section{Boulangerie}
+
+Point de consécration de la transofrmation des céréales, la boulangerie représente essentielle aussi bien dans l'organisation du travail et du chiffre d'affaire.
+
+\subsection{Fabrication du pain}
+
+Les pains que je compte proposer à la vente seront faits à partir de levain, en utilisant des méthodes traditionnelles, avec un four au feu de bois. Le volume de production visé est de 300kg par semaine, avec deux fournées de 150kg. C'est un volume important pour une seule personne ; pour pouvoir y parvenir, je compte m'appuyer sur une organisation dense et un four de grande capacité. 
+
+\subsubsection{Le levain}
+
+Le pain proposé sont tous des pains au levain traditionnels, qui se distingue des pains à la levure de boulanger. Le levain dit "naturel" est une fermentation spontanée d'un mélange d’eau et de farine à partir de levures et et bactéries naturellement présentes sur l'écorce des grains de blé. La principale levure est  l'amylase, qui dégrade les macro-molécules d'amidon en glucose et fructose. Si une partie de l'amidon doit être dégradée pour rendre le pain digeste et le levain dynamique, il est indispensable à la panification : en cuisant, cette molécule "gélifie" est permet la bonne tenue du pain après cuisson. Une faible activité amylasique engendre une absence d'activité du levain (et donc pas de levée). A l'inverse, un excès dégrade une trop grande proportion d'amidon, empêchant au pain de se tenir et d'obtenir sa forme finale, et lui donne un goût sucré du fait de l'excès de glucose.\footnote{Le climat a une incidence majeure sur l'activité amylasique, à travers l'humidité lors de la moisson. Un temps excessivement sec lors de la moisson inhibe cette activité ; il faudra en tenir compte lors de la mouture en humidifiant le grain pour la stimuler ; à l'inverse un temps frais et humide la stimule. En cas d'humidité excessive, l'activité amylasique est trop forte et le grain devient inutilisable en boulangerie. Il n'y a pas de possibilité de rattraper les dommages : il faut prévoir une moisson si possible une journée sèche. }. L’utilisation de levain produit une fermentation lactique qui permet une meilleure biodisponibilité des nutriments et une meilleure digestibilité du fait de l’hydrolyse de l’acide phytique et des glutens.
+
+\subsubsection{Matériel nécessaire}
+
+\paragraph{Four} L'élement central est le four : sa capacité détermine la production de pain. Pour obtenir une production de 150kg en une matinée, il faut idéalement un four ayant cette capacité, ce qui est relativement important. Dans tous les cas, je souhaite opter pour un four à feu de bois : plus cher à l'achat qu'un four électrique, il est beaucoup moins couteux à l'utilisation\footnote{Le prix du kWh électrique est à 17ct\euro{}, celui du bois à 4ct\euro{}}. Au vu de la production envisagée, il est possible d'utiliser un four à gueulard, avec une sole unique, mais très grande, ou un four à plusieurs soles, avec un circuit d'eau séparé, chauffé au feu de bois. Le four à geulard, moins pratique à utiliser, peut cependant être auto-construit.
+
+\paragraph{Pétrin mécanique} Rompant avec l'image idéale du paysan-boulanger pétrissant à la main, le pétrin mécanique permet de gagner du temps et d'éviter de s'épuiser durant l'élaboration de la pâte. Il est possible d'en trouver d'occasion facilement, d'une capacité de 50l, pour des prix aux alentours de 3 000\euro{}.
+
+\paragraph{Chambre froide} Elle permet de conserver le levain mais aussi de bloquer la levée du pain en cas d'imprévu comme un levain trop vif. 
+
+\subsection{Utilisation des farines et production de pain}
 
 Une fois le grain moulu, une partie seulement de la farine est utilisée pour la boulangerie. En effet, la quantité de pain maximale que je peux produire est de 300kg, afin de limiter le temps de travail. Pour comparer les besoins en boulangerie avec la production de farine, il faut regarder les besoins en farine pour chaque pain, estimés sur la figure \ref{fig:flux_boulange}. 
 
 \begin{figure}[h!]
 \begin{center}
-	\includegraphics[scale=0.5]{flux_physique_boulangerie.pdf}
+	\includegraphics[scale=0.5]{flux_physique_boulangerie2.pdf}
 	\caption{Processus de fabrication des différents pains. Les valeurs indiquées représentent les proportions des ingrédients dans la fabrication du pain ou dans la répartion de la farine.}
 	\label{fig:flux_boulange}
 \end{center}
@@ -809,14 +868,42 @@ A partir de la figure \ref{fig:flux_boulange}, on peut calculer les besoins en f
 
 Au vu des quantités de farine nécessaire pour le pain, il existe un surplus hebdomadaire de 31kg de farine de blé, 5 kg de farine de seigle, 8kg de farine de petit épeautre et 20 kg de farine de sarrasin. On considère que le travail est effectué sur 48 semaines à l'année.
 
+\subsection{Organisation}
+
+Il y a deux fournées par semaine ; dans l'idéal, elles seront prévues sur deux jours successifs pour profiter de la chaleur résiduelle du four d'un jour sur l'autre. Les pains faibles en gluten, sarrasin et petit épeautre, sont réalisés intégralement en un jour (par exemple le petit épeautre le premier jour, le sarrasin le lendemain), pour limiter à 3 le nombre de pâtes à préparer chaque jour de boulange. Pour atteindre la production voulue, il faut répartir la fabrication de la pâte en 5 pétries :
+\begin{itemize}
+
+	\item[-] 90kg de pain de campagne : 3 pétries successives de 38kg ;
+	\item[-] 30kg de pain de complet : 1 pétrie de 38kg ;
+	\item[-] 30kg de pain sarrasin ou petit épeautre : 1 pétrie de 38kg ;
+
+\end{itemize}
+
+Les étapes de bouangeries s'enchaînent alors comme indiqué schématiquement sur la figure \ref{fig:orga_boulange} :
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.5]{20200521_BPREA_orga_boulange.pdf}
+	\caption{Déroulement schematique des principales étapes lors de la fabrication du pain au cours d'une matinée.}
+	\label{fig:orga_boulange}
+\end{center}
+\end{figure}
+
+C'est une organisation dense et longue de 8h successives, mais faisable si scrupuleusement suivie. La fabrication commence tôt, avant 5h pour la préparation du matériel, et s'achève à 13h, pour enchaîner de suite avec les livraisons. Une autre possibilité est de préparer les pains le soir, à partir de 16h, pour les livrer tôt le matin, mais ils ne sont pas chauds.
+
+\chapter{Analyse économique}
+\label{part:chap_eco}
+
+Dans la partie \ref{chap:cereales}, on s'est proposé une conduite de culture pour assurer à la ferme une production viable agronomiquement parlant. L'analyse économique permet d'étudier la viabilité financière du projet et de le dimensionner pour atteindre les objetifs définis en partie \ref{part:objectifs}, avec la transformation en farine et en pain présentée en partie \ref{chap:meunerie_boul}.
+
 \section{Bilan de départ}
 \label{bilan_ouverture}
 
-Le bialn comptable de départ comptabilise l'ensemble des biens mobiliers, immobiliers et fonciers nécessaire au démarrage de l'activité et les moyens à travers lesquels ils ont été financés
+Le bilan comptable de départ comptabilise l'ensemble des biens mobiliers, immobiliers et fonciers nécessaire au démarrage de l'activité et les moyens avec lesquels ils ont été financés. On présente ici le matériel nécessaire pour ce projet et leur financement.
 
 \subsection{Actifs d'ouverture}
 
-L'actif d'ouverture représente la valeur comptable de l'ensemble des biens de l'entreprise au démarrage de l'activité, classé par liquidé croissante. Dans le projet présenté ici, il s'élève à environ 215 000\euro{}, dont les détails sont présentés dans le tableau \ref{tab:actif}. Les prix sont estimés en se basant sur les prix du marché, et en tenant en compte de l'autoconstruction, pour l'aménagement de la boulnagerie et les silos par exemple.
+L'actif d'ouverture représente la valeur comptable de l'ensemble des biens de l'entreprise au démarrage de l'activité, classés par liquidé croissante. Dans le projet présenté ici, il s'élève à environ 215 000\euro{}, dont les détails sont présentés dans le tableau \ref{tab:actif}. Les prix sont estimés en se basant sur les prix du marché de l'occasion, et en tenant en compte de l'autoconstruction, pour l'aménagement de la boulnagerie et les silos par exemple.
 
 \begin{figure}[h!]
 \footnotesize
@@ -880,9 +967,9 @@ Le passif d'ouverture de l'entreprise correspond au financement de l'actif d'ouv
 	& Subventions & 0 \euro{}\\ \hline
 	\textbf{Total capital} & & \textbf{105 000} \euro{}\\ \hline
 	 \hline
-	Emprunts & Bancaire LT & 50 500 \euro{} \\ 
+	Emprunts & Bancaire LT & 56 257 \euro{} \\ 
 	& Financement participatif & 50 000 \euro{}\\ 
-	& Bancaire CT & 9 322 \euro{}\\ \hline
+	& Bancaire CT & 3 565 \euro{}\\ \hline
 	\textbf{Total emprunts} & & \textbf{109 822 \euro{}}\\ \hline
 	 \hline
 	\textbf{Total passif} & &\textbf{214 822 \euro{}}\\ \hline
@@ -896,7 +983,9 @@ Le passif d'ouverture de l'entreprise correspond au financement de l'actif d'ouv
 
 	\item[$\bigstar$] Dans le capitaux propres, je peux investir personnellement 60 000\euro{} dans la ferme. Je compte aussi sur une DJA d'un montant de 45 000\euro{}, qui correspond à l'installation d'un jeune agriculteur en zone de montagne (dont fait partie le Trièves), en AB, avec les investissements proposés sur le tableau \ref{tab:actif}.
 	
-	\item[$\bigstar$] Je dois compléter mes capitaux propres par des emprunts, pour atteindre la totalité de la valeur de l'actif de démarrage, soit une dette de 109 822\euro{}. Pour éviter des annuités trop importantes, les emprunts sont à long terme, pour financer principalement les actifs à l'amortissement long (cf le tableau \ref{tab:amortissement} ci-dessous), comme l'achat du terrain, des bâtiments ou de la meule. L'emprunt à court terme (CT) permet de financer les semences de la première année.
+	\item[$\bigstar$] Je dois compléter mes capitaux propres par des emprunts, pour atteindre la totalité de la valeur de l'actif de démarrage, soit une dette de 109 822\euro{}. Pour éviter des annuités trop importantes, les emprunts sont à long terme, pour financer principalement les actifs à l'amortissement long (cf le tableau \ref{tab:amortissement} ci-dessous), comme l'achat du terrain, des bâtiments ou de la meule. 
+	
+	\item[$\bigstar$] L'emprunt à court terme (CT) permet de financer les semences de la première année. Il ne comprend pas le grain des premières années, achetés avec une partie de mes fonds propres, pour éviter des annuités trop fortes les premières années.
 	
 	\item[$\bigstar$] Je souhaiterais diversifier les sources d'emprunts. Plus particulièrement, je souhaiterais utiliser en partie un emprunt participatif à travers mon réseau, acommpagné par des structures adaptées, notamment celle proposée par Sébastien Kraft. Je compte lever 50 000\euro{} à un taux d'emprunt de l'ordre de 1\%.
 	
@@ -917,19 +1006,19 @@ Les emprunts envisagés dans le passif d'ouverture, détaillés en partie \ref{p
 \begin{figure}[h!]
 \footnotesize
 \center
-\begin{tabular}{ | p{3,5cm} | p{3cm}| p{1cm}| p{1,5cm}|p{2cm}| }
+\begin{tabular}{ | p{3,5cm} | p{3cm}| p{1cm}| p{1,5cm}|p{2cm}| p{2,5cm}|}
 \hline
-	& Montant de l'emprunt & Taux & Durée (ans) & Annuités \  \\ \hline
-	Bancaire LT & 56 257\euro{} & 1,5\% & 15 & 4 216\euro{} \\ \hline
-	Financement participatif & 50000\euro{} & 1\% & 10 & 5 279\euro{} \\ \hline
-	Bancaire CT & 3 565\euro{} & 4\% & 2 & 1 890\euro{} \\ \hline
-	\textbf{Total} & \textbf{109 822\euro{}} &  & & \textbf{11 385\euro{}}  \\ \hline
+	& Montant de l'emprunt & Taux & Durée (ans) & Annuités & Intérets annuels (moyennés) \\ \hline
+	Bancaire LT & 56 257\euro{} & 1,5\% & 15 & 4 216\euro{} & 465\euro{} \\ \hline
+	Financement participatif & 50000\euro{} & 1\% & 10 & 5 279\euro{} & 279\euro{} \\ \hline
+	Bancaire CT & 3 565\euro{} & 4\% & 2 & 1 890\euro{}  & 57 euro{} \\ \hline
+	\textbf{Total} & \textbf{109 822\euro{}} &  & & \textbf{11 385\euro{}} & 801\euro{} \\ \hline
 \end{tabular}
 \caption{Dtail des emprunts, de leur taux, de leur durée et des annuités correspondantes.}
 \label{tab:annuites}
 \end{figure}
 
-\textbf{Les annuités s'élèvent donc à environ 10 000\euro{}/an, charges financières comprises.} Notons que l'emprunt courte durée, ne dure que 2 ans : les annuités sont donc 11 000\euro{} les deux premières années, puis à environ 9000\euro{} après. 
+\textbf{Les annuités s'élèvent donc à environ 10 000\euro{}/an, charges financières comprises.} Notons que l'emprunt courte durée, ne dure que 2 ans : les annuités sont donc 11 000\euro{} les deux premières années, puis à environ 9000\euro{} après. Les intérêts représentent environ 801\euro{} par an : c'est une valeur représentative car c'est une moyenne de la totalité des intérêts remboursés sur la durée d'emprunt\footnote{Dans le cas d'un remboursement à annuités constantes, le montant des intérêts diminue progressivement au cours du remboursement.}, et d'autre part car les durées de remboursement ne sont pas les mêmes.
 
 \section{Produits et charges à terme}
 
@@ -1081,12 +1170,12 @@ Cet EBE va être ensuite réparti entre 3 postes : les amortissements à travers
 
 \subsubsection{Bénéfice}
 
-Le bénéfice ou résultat d'exercice correspond à la valeur dégagée par l'entreprise une fois toutes les charges et annuités déduites du chiffre d'affaire. Dans notre cas, il s'élève à :
+Le bénéfice ou résultat d'exercice correspond à la valeur dégagée par l'entreprise une fois toutes les charges et intérêts d'emprunt déduites du chiffre d'affaire. Dans notre cas, il s'élève à :
 
 \noindent\fbox{\parbox{\linewidth\fboxrule-2\fboxsep}{
-\textbf{Bénéfice} = Chiffre d'affaire - charges variables - charges de structure - amortissement - annuités  = \textbf{30 561\euro{}}}}
+\textbf{Bénéfice} = Chiffre d'affaire - charges variables - charges de structure - amortissement - intérêts d'emprunt  = $\sim$\textbf{40 000\euro{}}}}
 
-C'est un bénéfice élevé au regard du chiffre d'affaire : la rentabilité est de 39\%.
+C'est un bénéfice élevé au regard du chiffre d'affaire : la rentabilité est de 51\%. Cependant, il faut garder à l'esprit que ce bénéfice rembourse aussi les annuités d'emprunts, qui représentent 10 000\euro{}.
 
 \subsubsection{Revenu disponible}
 
@@ -1248,34 +1337,84 @@ Pour conclure, le système laisse une relative marge de maneuvre pour en vivre, 
 \section{Temps de travail}
 \label{part:tps_travail}
 
-48 smeaines par an
-45h par semaine
-2 fournée de 8h, soi t150 kg.
+Le temps de travail est principalement gouverné par la boulangerie et la commercialisation : il y a 2 fournées de 8h, suivies de 4h de livraison. En sus, il y a aussi des tâches diverses comme la meunerie, le ménage, ou la préparation du levain. Le temps dévolu aux cultures, estimé en partie \ref{tab:W_sol2}, est relativement faible et estimé à 5h par semaine avec l'entretien des parcelles et du parc mtériel. On compte par ailleurs 6h de tâches diverses, comme l'entretien du matériel ou les réparations, et 6h de travail administratif. La répartition est résumée dans la figure \ref{fig:tps_travail}.
+
+\begin{figure}[h!]
+\begin{center}
+	\includegraphics[scale=0.9]{temps_travail.pdf}
+	\caption{Estimation du temps de travail, réparti par tâches. Le total hebdomadaire est de 45h.}
+	\label{fig:tps_travail}
+\end{center}
+\end{figure}
+
+\textbf{Le temps de travail total, estimé à 45h hebdomadaire}, est inférieur à la limité des 50h proposées dans les objectifs en partie \ref{part:objectifs}. Il faudra être vigilant à la bonne organisation, surtout en boulangerie et en commercialisation pour ne pas voir le nombre d'heure exploser. Dans le système de production, on a par ailleurs considéré que \textbf{le travail est réparti sur 48 semaines à l'année, soit 4 semaines de congés.}
 
 \section{Choix du statut juridique, social et fiscal}
 
 \subsection{Statut juridique}
 
-Malgré un contexte démographique favorable\footnote{D'après la MSA, la moitié des agriculteurs devraient partir à la retraite dans les 10 prochaines années. Un départ massif qui ne semble pas, pour le moment, compensé par les installations.}, l'accessibilité au foncier agricole est une difficulté majeure pour les porteurs de projet, et plus particulièrement lors d'une installation hors cadre familial. Si cette problématique peut s'expliquer par de nombreux facteurs, le décalage sur les investissements nécessaires et sur la vision de l'agriculture entre les putatifs acquéreurs et les cédants semblent être une difficulté majeure. 
+Malgré un contexte démographique favorable\footnote{D'après la MSA, la moitié des agriculteurs devraient partir à la retraite dans les 10 prochaines années. Un départ massif qui ne semble pas, pour le moment, compensé par les installations.}, l'accessibilité au foncier agricole est une difficulté majeure pour les porteurs de projet, et plus particulièrement lors d'une installation hors cadre familial. Si cette problématique peut s'expliquer par de nombreux facteurs, le décalage sur la vision de l'agriculture et les investissements nécessaires entre les putatifs acquéreurs et les cédants semblent être une difficulté majeure. 
 
 En effet, sur le marché des cédants, se trouvent principalement des grandes exploitations en agriculture conventionnelle, très capitalistiques mais peu rentables ; alors que les porteurs de projets semblent de plus en plus se tourner vers des exploitations plus petites, avec moins d'investissements, et si possible avec une activité diversifiée pour améliorer leur rentabilité. 
 
-Une façon de surmonter ce déphasage entre l'offre et la demande, une possibilité serait une acquisition à plusieurs porteurs de projets sur une un bien
+Une façon de surmonter ce déphasage entre l'offre et la demande, une possibilité serait une acquisition foncière à plusieurs porteurs de projets sur un entreprise agricole en cessation d'activité. \textbf{En s'associant à 3 ou 4 porteurs de projet, il est envisageable d'atteindre des investissements mutualisés pour le foncier jusqu'à 400 000\euro{}, avec des surfaces d'une centaine d'hectares et du bâti.} Une asosciation avec des éleveurs seraient avantageuse aussi en terme agronomiques, avec l'échange de pâturages et de fumier, mais aussi en terme commercial, avec une gamme plus complète (produits laitiers et viande).
 
 \subsubsection{SCI : Acquisition du foncier}
 \label{part:SCI}
 
-\subsubsection{Entreprise agricole}
+\textbf{Juridiquement, les porteurs de projets crééraient une Société Civile Immobilière (SCI) leur permettant de mutualiser le capital d'investissement et de présenter un seul interlocuteur (la SCI, une personne morale) au cédant du foncier.} Les status définis lors de la création de la SCI, qui est une entité jruidique très souple, permettraient de définir clairement les apports mutuels de chacun des associés afin de le sécuriser. La SCI deviendrait donc propriétaire de l'ensemble du foncier et louerait ensuite les terres et une partie des bâtiments à chaque porteur de projet. C'est elle qui porterait donc l'emprunt potentiellement nécessaire à l'acquisition.
 
+\textbf{D'un point de vue financier, la situation serait identique à ce qui a été présenté en partie \ref{bilan_ouverture} : les investissement et les dettes sont inchangés.} Du point de vue comptable, les actifs liés au foncier (les terrains et les bâtiments) seraient remplacés par les parts dans SCI et les annuités d'emprunts seraient remplacées par le loyer payé à la SCI\footnote{Ce loyer permet de rembourser les emprunts réalisés à travers la SCI pour l'acquisition du foncier.}.
+
+\subsubsection{Entreprise agricole : EI ou EARL}
+
+Si la mutualisation des moyens permet d'avoir une force pour l'acquisition du foncier, il y a un risque humain non négligeable une fois l'activité des différents porteur de projet démarrée. En effet, chaque projet agricole est long, complexe et parfois psychologiquement lourd à porter. Une association dès le démarrage, avec des personnes que l'on connaît peu présente un risque de mésentente, qui peut réduire à néant le projet. 
+
+Pour prévenir à ce risque, le mieux serait de dissocier juridiquement les statuts des entreprises des différents porteurs de projets, par exemple à travers des statuts d'Entreprise Individuelle (EI) ou d'Exploitation Agricole à Responsabilité Limitée (EARL). Cette distinction juridique permet de laisser une indépendance à chaque porteur de projet pour réaliser son activité librement, sans les contraintes des décisions collectives comme dans un GAEC. Evidemment, de l'entraide et du partage de matériel sont envisagés, et même souhaités ; mais la dissociation juridique permet une relative tranquillité d'esprit en cas de mésentente, et permet de simplifier le départ potentiel d'un associé de la SCI.
 
 \subsection{Statut social}
+
+Dans le cadre de mon projet, le statut social serait nécessairement celui d'exploitant agricole, pour plusieurs raisons : \
+\begin{itemize}
+
+	\item[$\rightarrow$] Je souhaite bénéficier de prestations sociales ! Et il me paraît important de contribuer à cet effort collectif.
+	
+	\item[$\rightarrow$] Postulant à la DJA, je suis obligé d'avoir le statut d'exploitant agricole.
+	
+	\item[$\rightarrow$] Au vu de la surface d'exploitation et des activités transverses (meunerie et boulangerie), je suis obligé d'être déclaré en tant que chef d'exploitation.
+
+\end{itemize}
 
 \subsection{Statut fiscal}
 
 \subsubsection{Régime fiscal}
 
-Les deux régimes fiscaux, "micro BA" ou "réel", déterminent les assiettes fiscales de l'agriculteur. Lorsque le chiffre d'affaire est inférieur
+Dans le cadre de l'imposition sur le revenu, les deux régimes fiscaux, , "micro BA" ou "réel", déterminent les assiettes fiscales de l'agriculteur. Lorsque le chiffre d'affaire est inférieur à 82 000\euro{}, ce qui est le cas de mon projet\footnote{Le CA du projet présenté ici est estimé à 78 000\euro{} (cf chapitre \ref{part:chap_eco}).}, il est possible de choisir entre ces deux statuts, ce qui est le cas dans mon projet.
+
+Une estimation des impôts sur le revenu en fonction de ces deux assiettes donne : 
+\begin{itemize}
+
+\item[|\$|] Dans le cas du micro-BA, l'asiette fiscale est de 87\%$\times$78 000\euro{}, soit 10 000\euro{}. L'impôt sur le revenu est alors d'environ 50\euro{}.
+
+\item[|\$|] Dans le cas du régime réel, l'assiette fiscale correspond au résultat (ou exercice) de l'entreprise, soit 30 000\euro{}. L'impôt surle revenu s'élève alors à 3 460\euro{}.
+
+\end{itemize}
+
+\textbf{Le micro-BA se montre cliarement avantageux} ; en effet, l'abattement de 87\% le rend plus intéressant tant que l'exercice de la ferme est supérieur à 10 000\euro{}, ce qui sera (je l'espère !) le cas. Il faudra cependant tenir compte à ne pas dépasser le plafond de 82 000\euro{}. 
 
 \subsubsection{Assujettisement à la TVA}
+
+L'assujettissement à la TVA est obligatoire lorsque le chiffre d'affaire dépasse 46 000\euro{} : je n'ai donc pas le choix d'y être assujetti. C'est cependant dans le cadre de ce projet, car je peux bénificier d'un remboursement de la TVA sur les investissements importants nécessaires (le matériel de boulangerie et du tracteur). 
+
+\chapter*{Conclusion}
+
+
+Peu connu il y a seulement une dizaine d'années, le métier de paysan-boulanger semble connaître un succès grandissant dans le monde agricole. A rebours des grands systèmes céréaliers en lutte pour l'agrandissement et la compétitivité internationale, le paysan-boulanger ouvre une voie indispensable dans l'agroécologie à travers les céréales, qui rappelons-le, sont au coeur de notre histoire alimentaire, et son futur. 
+
+Par ailleurs, la possibilité d'atteindre des revenus assez élevés peut expliquer ce succès pour le métier de paysan-boulanger, qui bénéficie d'un double avantage comparatif. Le premier est celui par rapport aux autres productions agricoles, caractérisés par une valeur faible des produits bruts : la transformation en pain permet de dégager une valeur ajoutée bien plus conséquente. Le second avantage est en comparaison des artisans-boulangers, dont les charges de taxes et cotisations sociales semblent être plus élevées. Il faut être vigilant à ce que le métier de paysan-boulanger n'apparaisse pas comme une "niche" économique et fiscale dans le futur.
+
+A travers ce dossier, j'ai essayé d'imaginer le projet de paysan-boulanger tel que je l'imagine : en agroécologie, propriétaire de ses terres, de ses bâtiments et de son matériel, avec une production importante pour atteindre l'équivalent de revenu médian français. On a pu voir qu'il était possible d'atteindre ces objectifs, sous réserve d'un investissement conséquent, d'une organisation minutieuse et d'un surdimensionnement du matériel.
+
+Cependant, ce projet n'étant pas encore concrétisé, il reste de nombreuses inconnues, mais qui sont pour moi des axes d'améliorations. Je pense particulièrement à l'installation en association avec partage du matériel. Au-delà de l'évidence économique, c'est aussi une volonté de développer une dynamique collective et tendre vers une ferme de polyculture portée par plusieurs associés. 
 
 \end{document}
